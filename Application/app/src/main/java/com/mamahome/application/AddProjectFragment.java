@@ -19,6 +19,7 @@ public class AddProjectFragment extends Fragment {
         // Required empty public constructor
     }
 
+    //Checking for commit
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

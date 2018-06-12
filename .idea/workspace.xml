@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25c45a60-dcbf-44fd-b7c3-02e54e32b2bc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/AddProjectFragment.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/.gitignore" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/caches/build_file_checksums.ser" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/.idea/codeStyles/Project.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.idea/codeStyles/Project.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/.idea/encodings.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/encodings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/.idea/gradle.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/gradle.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/.idea/misc.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/runConfigurations.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/.idea/vcs.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/vcs.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/.gitignore" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/build.gradle" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/build.gradle" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/proguard-rules.pro" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/proguard-rules.pro" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/androidTest/java/com/mamahome/application/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/androidTest/java/com/mamahome/application/ExampleInstrumentedTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/AndroidManifest.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/ic_launcher-web.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/ic_launcher-web.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/AddEnquiryFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddEnquiryFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/ConfirmedOrdersFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ConfirmedOrdersFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/CustomerSupportFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/CustomerSupportFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/EnquiriesFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/EnquiriesFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/HomeActivity.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/HomeActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/HomeFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/HomeFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/LoginActivity.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/LoginActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/OrdersFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/OrdersFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/OrdersTabAdapter.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/OrdersTabAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/PendingOrdersFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/PendingOrdersFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/ProjectsFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ProjectsFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/RateUsFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/RateUsFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/SignUpActivity.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/SignUpActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/SplashScreenActivity.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/SplashScreenActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/ViewEnquiryFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ViewEnquiryFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/ViewOrderFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ViewOrderFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/mamahome/application/ViewProjectFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ViewProjectFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/anim/fadeout.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/fadeout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/anim/growbig.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/growbig.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/anim/slide_in_left.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/slide_in_left.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/anim/slide_in_right.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/slide_in_right.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/anim/slide_out_left.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/slide_out_left.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/anim/slide_out_right.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/slide_out_right.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/anim/tobottom.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/tobottom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/anim/totop.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/totop.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable-mdpi/text_background_green.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable-mdpi/text_background_green.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/backblurss.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/backblurss.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/bulidings.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/bulidings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/call_vector.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/call_vector.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/customer_support_vector.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/customer_support_vector.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_add_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_add_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_add_white.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_add_white.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_customer_support_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_customer_support_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_enquiry_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_enquiry_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_home_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_home_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_logout_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_logout_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_orders_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_orders_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_projects_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_projects_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_rate_us_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_rate_us_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_shopping_cart_black.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_shopping_cart_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_visibility_off_white_18dp.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_visibility_off_white_18dp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/ic_visibility_white_18dp.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_visibility_white_18dp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/icon_selector.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/icon_selector.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/logo.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/mail_vector.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/mail_vector.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/mamahomelogo.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/mamahomelogo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/mamahomelogofinal.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/mamahomelogofinal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/mamalogo.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/mamalogo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/side_nav_bar.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/side_nav_bar.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/tab_selected_background.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/tab_selected_background.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/tab_selector.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/tab_selector.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/text_background_orange.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/text_background_orange.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/drawable/whatsapp_vector.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/whatsapp_vector.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/activity_home.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_home.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_login.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/activity_sign_up.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_sign_up.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/activity_splash_screen.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_splash_screen.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_add_enquiry.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_add_enquiry.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_add_project.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_add_project.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_confirmed_orders.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_confirmed_orders.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_customer_support.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_customer_support.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_enquiries.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_enquiries.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_home.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_home.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_orders.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_orders.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_pending_orders.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_pending_orders.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_projects.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_projects.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_rate_us.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_rate_us.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_view_enquiry.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_view_enquiry.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_view_order.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_view_order.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/fragment_view_project.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_view_project.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/nav_header.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/nav_header.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/menu/home_menu.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/menu/home_menu.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/values-v21/styles.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values-v21/styles.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/colors.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/dimens.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/values/drawables.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/drawables.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/values/ic_launcher_background.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/ic_launcher_background.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/styles.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/app/src/test/java/com/mamahome/application/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/test/java/com/mamahome/application/ExampleUnitTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/build.gradle" afterPath="$PROJECT_DIR$/MMT TRACKING APP/build.gradle" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/gradle.properties" afterPath="$PROJECT_DIR$/MMT TRACKING APP/gradle.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/gradlew" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradlew" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/gradlew.bat" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradlew.bat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/settings.gradle" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/settings.gradle" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.gitignore" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.idea/assetWizardSettings.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.idea/assetWizardSettings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.idea/caches/build_file_checksums.ser" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.idea/codeStyles/Project.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/codeStyles/Project.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.idea/encodings.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.idea/encodings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.idea/gradle.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.idea/gradle.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.idea/misc.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.idea/runConfigurations.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/.idea/vcs.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/.idea/vcs.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/.gitignore" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/build.gradle" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/build.gradle" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/proguard-rules.pro" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/proguard-rules.pro" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/androidTest/java/com/example/reube/menu/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/androidTest/java/com/example/reube/menu/ExampleInstrumentedTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/AndroidManifest.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/java/com/example/reube/menu/MainActivity.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/MainActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/java/com/example/reube/menu/login_activity.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/login_activity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/java/com/example/reube/menu/model/ResObj.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/model/ResObj.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/java/com/example/reube/menu/remote/ApiUtils.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/remote/ApiUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/java/com/example/reube/menu/remote/LocationService.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/remote/LocationService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/java/com/example/reube/menu/remote/RetrofitClient.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/remote/RetrofitClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/java/com/example/reube/menu/remote/UserService.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/remote/UserService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable-v21/ic_menu_camera.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_camera.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable-v21/ic_menu_gallery.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_gallery.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable-v21/ic_menu_manage.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_manage.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable-v21/ic_menu_send.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_send.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable-v21/ic_menu_share.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_share.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable/ic_keyboard_capslock_black_24dp.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/ic_keyboard_capslock_black_24dp.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable/ic_launcher_background.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/ic_launcher_background.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable/ic_lock_outline_black.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/ic_lock_outline_black.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable/mamahome_foreground.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/mamahome_foreground.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable/mamahome_icon_background.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/mamahome_icon_background.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable/mmt.JPG" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/mmt.JPG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/drawable/side_nav_bar.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/side_nav_bar.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/activity_main.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/layout/app_bar_main.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/app_bar_main.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/content_main.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/layout/login.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/login.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/layout/nav_header_main.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/nav_header_main.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/menu/activity_main_drawer.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/menu/activity_main_drawer.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/menu/main.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/values-v21/styles.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values-v21/styles.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/colors.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/dimens.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/values/drawables.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/drawables.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/values/google_maps_api.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/google_maps_api.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/styles.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/app/src/test/java/com/example/reube/menu/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/MMT TRACKING APP/app/src/test/java/com/example/reube/menu/ExampleUnitTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/build.gradle" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/build.gradle" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/gradle.properties" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradle.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/MMT TRACKING APP/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/MMT TRACKING APP/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/gradlew" afterPath="$PROJECT_DIR$/MMT TRACKING APP/gradlew" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/gradlew.bat" afterPath="$PROJECT_DIR$/MMT TRACKING APP/gradlew.bat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Menu/settings.gradle" afterPath="$PROJECT_DIR$/MMT TRACKING APP/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddProjectFragment.java" afterPath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddProjectFragment.java" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddProjectFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddProjectFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddProjectFragment.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MAMAHOME BUYER APP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MAMAHOME BUYER APP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MAMAHOME BUYER APP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MAMAHOME BUYER APP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MAMAHOME BUYER APP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mamahome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Android" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25c45a60-dcbf-44fd-b7c3-02e54e32b2bc" name="Default" comment="" />
+      <created>1528796172376</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528796172376</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24479167" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddProjectFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

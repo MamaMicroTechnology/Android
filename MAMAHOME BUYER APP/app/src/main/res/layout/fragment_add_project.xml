@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProjectFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Project Details"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabelCommon">
+
+                <EditText
+                    android:id="@+id/et_projectname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Project Name*"
+                    android:inputType="text"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabelCommon">
+
+                <EditText
+                    android:id="@+id/et_roadname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Road Name/No.*"
+                    android:inputType="text"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabelCommon">
+
+                <EditText
+                    android:id="@+id/et_roadwidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Road Width*"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabelCommon">
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Full Address*"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16sp"
+                    android:text="Construction Type*"
+                    android:textColor="@color/Black"
+                    android:layout_weight=".5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/rg_constructiontype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_residential"
+                            android:text="Residential"
+                            android:checked="true"
+                            android:textStyle="italic"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_commercial"
+                            android:text="Commercial"
+                            android:textStyle="italic"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16sp"
+                    android:text="Intrested in RMC*    "
+                    android:textColor="@color/Black"
+                    android:layout_weight=".5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/rg_rmc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_rmc_yes"
+                            android:text="Yes"
+                            android:checked="true"
+                            android:textStyle="italic"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_rmc_no"
+                            android:text="No"
+                            android:textStyle="italic"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:text="Government Approvals (Muncipal, BBMP, etc.)"
+                android:textColor="@color/Black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_gov_selectfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_background_orange"
+                    android:text="Select File"
+                    android:textColor="@color/White"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/tv_gov_filename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No File Selected"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:text="Project Status*"
+                android:textColor="@color/Black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_planning"
+                    android:text="Planning"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_digging"
+                    android:text="Digging"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_foundation"
+                    android:text="Foundation"
+                    android:textStyle="italic"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_pillars"
+                    android:text="Pillars"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_walls"
+                    android:text="Walls"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_roofing"
+                    android:text="Roofing"
+                    android:textStyle="italic"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_electrical"
+                    android:text="Electrical"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_plumbing"
+                    android:text="Plumbing"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_plastering"
+                    android:text="Plastering"
+                    android:textStyle="italic"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_flooring"
+                    android:text="Flooring"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_carpentry"
+                    android:text="Carpentry"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_paintings"
+                    android:text="Paintings"
+                    android:textStyle="italic"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_fixtures"
+                    android:text="Fixtures"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_completion"
+                    android:text="Completion"
+                    android:textStyle="italic"/>
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_closed"
+                    android:text="Closed"
+                    android:textStyle="italic"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabelCommon">
+
+                <EditText
+                    android:id="@+id/et_plotsize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Plot Size*"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:text="Project Type*"
+                android:textColor="@color/Black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="@style/TextLabelCommon">
+
+                    <EditText
+                        android:id="@+id/et_basement_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Basement"
+                        android:maxLength="1"
+                        android:inputType="number"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@android:color/black" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="@style/TextLabelCommon">
+
+                    <EditText
+                        android:id="@+id/et_upperfloor_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Floors"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@android:color/black" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:text="Total() = Basement() + Ground + Floors()"
+                android:textColor="@color/Black"/>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabelCommon">
+
+                <EditText
+                    android:id="@+id/et_project_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Project Size* (Approx)"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16sp"
+                    android:text="Budget Type*"
+                    android:textColor="@color/Black"
+                    android:layout_weight=".5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/rg_budget_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_structural"
+                            android:text="Strutural"
+                            android:checked="true"
+                            android:textStyle="italic"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_finishing"
+                            android:text="Finishing"
+                            android:textStyle="italic"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabelCommon">
+
+                <EditText
+                    android:id="@+id/et_budget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Budget* (Approx)"
+                    android:inputType="number"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:text="Project Images*"
+                android:textColor="@color/Black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_projectimg_selectfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_background_orange"
+                    android:text="Select File"
+                    android:textColor="@color/White"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/tv_projectimg_filename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No File Selected"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <!--Add Room Types-->
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

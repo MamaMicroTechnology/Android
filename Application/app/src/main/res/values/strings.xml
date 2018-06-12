@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MamaHome</string>
+    <string name="cannot_empty">This Field cannot be left Empty!</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="welcome_message">Welcome to Mamahome!</string>
+    <string name="rate_us">We would love to hear back from you!</string>
+    <string name="submit">Submit</string>
+    <string name="ty_ratingus">Thank you for your honest feedback. :)</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_page_text_1">We Are Avoiding All The Middle Agents Between The Manufactures And Consumers</string>
+    <string name="home_page_text_2">At MamaHome We Are Always Committed To Benefit Our Buyers With Big Brands</string>
+</resources>

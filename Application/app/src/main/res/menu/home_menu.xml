@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_id"
+        android:icon="@drawable/ic_home_black"
+        android:title="Home" />
+    <item
+        android:id="@+id/projects_id"
+        android:icon="@drawable/ic_projects_black"
+        android:title="Projects" />
+    <item
+        android:id="@+id/enquiries_id"
+        android:icon="@drawable/ic_enquiry_black"
+        android:title="Enquiries" />
+    <item
+        android:id="@+id/orders_id"
+        android:icon="@drawable/ic_orders_black"
+        android:title="Orders" />
+    <item
+        android:id="@+id/customersupport_id"
+        android:icon="@drawable/ic_customer_support_black"
+        android:title="Customer Support" />
+    <item
+        android:id="@+id/logout_id"
+        android:icon="@drawable/ic_logout_black"
+        android:title="Logout" />
+    <item
+        android:id="@+id/rateus_id"
+        android:icon="@drawable/ic_rate_us_black"
+        android:title="Rate Us" />
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OrdersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/tv_addnewproject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate New Order"
+            android:textColor="@color/White"
+            android:background="@drawable/text_background_green"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="28dp"
+            android:visibility="visible"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/fbt_addOrder"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            app:fabSize="normal"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabTextColor="@color/White"
+        app:tabSelectedTextColor="@color/White"
+        app:tabIndicatorHeight="1.5dp" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_orders"
+        android:background="#FFF"/>
+
+</LinearLayout>

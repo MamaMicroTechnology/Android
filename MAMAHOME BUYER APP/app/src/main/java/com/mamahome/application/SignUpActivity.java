@@ -17,6 +17,7 @@ public class SignUpActivity extends AppCompatActivity {
     EditText et_Email;
     EditText et_Phone;
     Button btn_signUp;
+    String base_URL = "http://mamahome360.com/webapp/api/register";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

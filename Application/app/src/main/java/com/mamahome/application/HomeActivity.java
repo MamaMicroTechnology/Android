@@ -29,6 +29,8 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //setup of Navigation Drawer
+
         drawerLayout = (DrawerLayout) findViewById(R.id.navDrawer);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.drawer_open, R.string.drawer_close);
 

@@ -1,0 +1,149 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\ff748bc7e2c35871885d94eb649588a8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\c65dd6884903be8da64926b6c17102a4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\51ad9832b9668eeeb08471416415c242\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\006164348828cb492a1fb1d0029687e1\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\cea29bc7442187eafb088bf562bad304\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8c6f0ddfb9d7c8fc22f90cf9cbe17dab\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\dcf0b56dad603d684f5f9747b4e4eeb1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\7368f3d58d0a14c18c8f12d3b346153a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\09416ffa2cca7d9271ef454adc6943c1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3aca2093cd16c194f35505226141f7e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\82542406b1cbeacd6147ab794018b8e1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\490868d14a53147bd4c51cf3e22f814e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\dca4bb5f1744d04d7d2956a9d8edac92\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\c1e98756ec7ec2fe361e8ecd283888d3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3e44b465ae1df54e3ed1a00933b88352\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\65e0083b56e9d28b8f8fe1950fcc740c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0d5c815ba9531bb87a0289ea1eb9aaf9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\450ccb87bfd3e0c1b1348c08293f3997\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+	package
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:5:5-33:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\51ad9832b9668eeeb08471416415c242\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\51ad9832b9668eeeb08471416415c242\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\cea29bc7442187eafb088bf562bad304\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\cea29bc7442187eafb088bf562bad304\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.mamahome.application.SplashScreenActivity
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:12:9-21:20
+	android:screenOrientation
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:14:13-49
+	android:theme
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:13:13-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.mamahome.application.LoginActivity
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:22:9-25:59
+	android:screenOrientation
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:24:13-49
+	android:theme
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:23:13-42
+activity#com.mamahome.application.SignUpActivity
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:26:9-29:59
+	android:screenOrientation
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:28:13-49
+	android:theme
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:29:13-56
+	android:name
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:27:13-43
+activity#com.mamahome.application.HomeActivity
+ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:30:9-32:51
+	android:screenOrientation
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:32:13-49
+	android:name
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml:31:13-41
+uses-sdk
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\ff748bc7e2c35871885d94eb649588a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\ff748bc7e2c35871885d94eb649588a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\c65dd6884903be8da64926b6c17102a4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\c65dd6884903be8da64926b6c17102a4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\51ad9832b9668eeeb08471416415c242\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\51ad9832b9668eeeb08471416415c242\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\006164348828cb492a1fb1d0029687e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\006164348828cb492a1fb1d0029687e1\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\cea29bc7442187eafb088bf562bad304\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\cea29bc7442187eafb088bf562bad304\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8c6f0ddfb9d7c8fc22f90cf9cbe17dab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8c6f0ddfb9d7c8fc22f90cf9cbe17dab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\dcf0b56dad603d684f5f9747b4e4eeb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\dcf0b56dad603d684f5f9747b4e4eeb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\7368f3d58d0a14c18c8f12d3b346153a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\7368f3d58d0a14c18c8f12d3b346153a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\09416ffa2cca7d9271ef454adc6943c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\09416ffa2cca7d9271ef454adc6943c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3aca2093cd16c194f35505226141f7e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3aca2093cd16c194f35505226141f7e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\82542406b1cbeacd6147ab794018b8e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\82542406b1cbeacd6147ab794018b8e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\490868d14a53147bd4c51cf3e22f814e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\490868d14a53147bd4c51cf3e22f814e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\dca4bb5f1744d04d7d2956a9d8edac92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\dca4bb5f1744d04d7d2956a9d8edac92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\c1e98756ec7ec2fe361e8ecd283888d3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\c1e98756ec7ec2fe361e8ecd283888d3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3e44b465ae1df54e3ed1a00933b88352\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3e44b465ae1df54e3ed1a00933b88352\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\65e0083b56e9d28b8f8fe1950fcc740c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\65e0083b56e9d28b8f8fe1950fcc740c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0d5c815ba9531bb87a0289ea1eb9aaf9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0d5c815ba9531bb87a0289ea1eb9aaf9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\450ccb87bfd3e0c1b1348c08293f3997\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Karthi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\450ccb87bfd3e0c1b1348c08293f3997\AndroidManifest.xml:20:5-44
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+		ADDED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml
+		INJECTED from D:\New folder\Android\MAMAHOME BUYER APP\app\src\main\AndroidManifest.xml

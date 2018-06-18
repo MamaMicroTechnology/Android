@@ -8,6 +8,21 @@
     <string name="submit">Submit</string>
     <string name="ty_ratingus">Thank you for your honest feedback. :)</string>
 
+    <string-array name="Floor">
+        <item>Floor1</item>
+        <item>Floor2</item>
+        <item>Floor3</item>
+        <item>Floor4</item>
+        <item>Floor5</item>
+        <item>Floor6</item>
+    </string-array>
+
+    <string-array name="Room">
+        <item>1bhk</item>
+        <item>2bhk</item>
+        <item>3bhk</item>
+    </string-array>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home_page_text_1">We Are Avoiding All The Middle Agents Between The Manufactures And Consumers</string>
     <string name="home_page_text_2">At MamaHome We Are Always Committed To Benefit Our Buyers With Big Brands</string>

@@ -130,6 +130,8 @@ public class HomeActivity extends AppCompatActivity {
                         SharedPreferences pref = getApplicationContext().getSharedPreferences("SP_USER_DATA", MODE_PRIVATE);
                         SharedPreferences.Editor editor = pref.edit();
                         editor.putBoolean("USER_LOGGED_IN", false);
+                        editor.putString("USER_ID", "");
+                        editor.putString("USER_NAME", "");
                         editor.apply();
                         Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
                         startActivity(intent);

@@ -736,7 +736,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:entries="@array/Room"
-            android:id="@+id/spin_type">
+            android:id="@+id/spin_roomtype">
         </Spinner>
 
         <EditText
@@ -744,7 +744,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:hint="No of house"
-            android:id="@+id/num_house"/>
+            android:id="@+id/et_num_house"/>
 
 
     </LinearLayout>

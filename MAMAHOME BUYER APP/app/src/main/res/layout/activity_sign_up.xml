@@ -77,6 +77,25 @@
                 android:textColorHint="@android:color/black" />
         </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/icon_selector"
+            app:passwordToggleTint="@color/Black"
+            app:passwordToggleEnabled="true"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/Black"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
         <RadioGroup
             android:id="@+id/rg_usertype"
             android:layout_width="wrap_content"
@@ -87,7 +106,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="10dp"
                 android:id="@+id/rb_buyer"
                 android:text="Buyer"
                 android:checked="true"
@@ -96,7 +115,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/rb_contractor"
+                android:layout_marginRight="10dp"
                 android:text="Contractor"
+                android:textStyle="italic"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_builder"
+                android:text="Builder"
                 android:textStyle="italic"/>
 
         </RadioGroup>

@@ -42,7 +42,7 @@
         <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
         <item name="colorAccent">@color/White</item>
         <item name="colorControlNormal">@color/Black</item>
-        <item name="colorControlActivated">@color/Black</item>
+        <item name="colorControlActivated">@color/Red</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

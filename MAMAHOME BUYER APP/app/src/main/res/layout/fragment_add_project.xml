@@ -24,15 +24,14 @@
                 android:text="Project Details"
                 android:textColor="@color/Black"
                 android:textSize="30dp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:background="#000000"/>
+                android:background="#000000" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -112,7 +111,7 @@
                     android:layout_weight=".5"
                     android:text="Construction Type*"
                     android:textColor="@color/Black"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -131,13 +130,14 @@
                             android:layout_height="wrap_content"
                             android:checked="true"
                             android:text="Residential"
-                            android:textStyle="italic"/>
+                            android:textStyle="italic" />
+
                         <RadioButton
                             android:id="@+id/rb_commercial"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Commercial"
-                            android:textStyle="italic"/>
+                            android:textStyle="italic" />
 
                     </RadioGroup>
 
@@ -165,7 +165,7 @@
                     android:layout_weight=".5"
                     android:text="Intrested in RMC*"
                     android:textColor="@color/Black"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -184,13 +184,14 @@
                             android:layout_height="wrap_content"
                             android:checked="true"
                             android:text="Yes"
-                            android:textStyle="italic"/>
+                            android:textStyle="italic" />
+
                         <RadioButton
                             android:id="@+id/rb_rmc_no"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="No"
-                            android:textStyle="italic"/>
+                            android:textStyle="italic" />
                     </RadioGroup>
 
                 </LinearLayout>
@@ -209,45 +210,46 @@
                 android:orientation="horizontal"
                 android:weightSum="1">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="22dp"
-                android:layout_weight=".5"
-                android:text="Intrested in Bank Loans?*"
-                android:textColor="@color/Black"
-                android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_weight=".5"
+                    android:text="Intrested in Bank Loans?*"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
 
-                <RadioGroup
-                    android:id="@+id/rg_loan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/rb_loan_yes"
+                    <RadioGroup
+                        android:id="@+id/rg_loan"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="Yes"
-                        android:textStyle="italic"/>
-                    <RadioButton
-                        android:id="@+id/rb_loan_no"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No"
-                        android:textStyle="italic"/>
-                </RadioGroup>
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rb_loan_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Yes"
+                            android:textStyle="italic" />
+
+                        <RadioButton
+                            android:id="@+id/rb_loan_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:textStyle="italic" />
+                    </RadioGroup>
+
+                </LinearLayout>
 
             </LinearLayout>
-
-        </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -261,51 +263,52 @@
                 android:orientation="horizontal"
                 android:weightSum="1">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="22dp"
-            android:layout_weight=".5"
-            android:text="Intrested in UPVC Doors \nand Windows?*"
-            android:textColor="@color/Black"
-            android:textSize="16sp"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:orientation="vertical">
-
-            <RadioGroup
-                android:id="@+id/rg_upvc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/rb_upvc_yes"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="Yes"
-                    android:textStyle="italic"/>
-                <RadioButton
-                    android:id="@+id/rb_upvc_no"
-                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_weight=".5"
+                    android:text="Intrested in UPVC Doors \nand Windows?*"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No"
-                    android:textStyle="italic"/>
-            </RadioGroup>
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
 
-        </LinearLayout>
+                    <RadioGroup
+                        android:id="@+id/rg_upvc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-    </LinearLayout>
+                        <RadioButton
+                            android:id="@+id/rb_upvc_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Yes"
+                            android:textStyle="italic" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="5dp"
-            android:background="#000000" />
+                        <RadioButton
+                            android:id="@+id/rb_upvc_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:textStyle="italic" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#000000" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -314,7 +317,7 @@
                 android:layout_marginTop="10dp"
                 android:text="Government Approvals (Muncipal, BBMP, etc.)"
                 android:textColor="@color/Black"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -328,12 +331,13 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/text_background_orange"
                     android:text="Select File"
-                    android:textColor="@color/White"/>
+                    android:textColor="@color/White" />
+
                 <TextView
                     android:id="@+id/tv_gov_filename"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="No File Selected"/>
+                    android:text="No File Selected" />
 
             </LinearLayout>
 
@@ -350,7 +354,7 @@
                 android:layout_marginTop="10dp"
                 android:text="Project Status*"
                 android:textColor="@color/Black"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -363,21 +367,23 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Planning"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_digging"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Digging"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_foundation"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Foundation"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
 
 
             </LinearLayout>
@@ -393,21 +399,23 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Pillars"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_walls"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Walls"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_roofing"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Roofing"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
 
 
             </LinearLayout>
@@ -423,24 +431,27 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Electrical"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_plumbing"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Plumbing"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_plastering"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Plastering"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -452,21 +463,23 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Flooring"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_carpentry"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Carpentry"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_paintings"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Paintings"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
 
 
             </LinearLayout>
@@ -482,21 +495,23 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Fixtures"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_completion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Completion"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
+
                 <CheckBox
                     android:id="@+id/cb_closed"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Closed"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
 
 
             </LinearLayout>
@@ -506,7 +521,7 @@
                 android:layout_height="1dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:background="#000000"/>
+                android:background="#000000" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -531,7 +546,7 @@
                 android:layout_marginTop="10dp"
                 android:text="Project Type*"
                 android:textColor="@color/Black"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -584,14 +599,14 @@
                 android:text="Total() = Basement() + Ground + Floors()"
                 android:textAlignment="center"
                 android:textColor="@color/Black"
-                android:textSize="10sp"/>
+                android:textSize="10sp" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:background="#000000"/>
+                android:background="#000000" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -623,7 +638,7 @@
                     android:layout_weight=".5"
                     android:text="Budget Type*"
                     android:textColor="@color/Black"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -642,13 +657,14 @@
                             android:layout_height="wrap_content"
                             android:checked="true"
                             android:text="Strutural"
-                            android:textStyle="italic"/>
+                            android:textStyle="italic" />
+
                         <RadioButton
                             android:id="@+id/rb_finishing"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Finishing"
-                            android:textStyle="italic"/>
+                            android:textStyle="italic" />
 
                     </RadioGroup>
 
@@ -661,7 +677,7 @@
                 android:layout_height="1dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:background="#000000"/>
+                android:background="#000000" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -687,7 +703,7 @@
                 android:layout_marginTop="10dp"
                 android:text="Project Images*"
                 android:textColor="@color/Black"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -701,94 +717,93 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/text_background_orange"
                     android:text="Select File"
-                    android:textColor="@color/White"/>
+                    android:textColor="@color/White" />
+
                 <TextView
                     android:id="@+id/tv_projectimg_filename"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="No File Selected"/>
+                    android:text="No File Selected" />
 
             </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/parent_linear"
-    android:layout_marginTop="10dp"
-    android:orientation="vertical">
 
- <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:id="@+id/LL_addroom"
-        android:layout_height="50dp">
-
-        <Spinner
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:entries="@array/Floor"
-            android:id="@+id/spin_floor">
-        </Spinner>
-
-        <Spinner
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:entries="@array/Room"
-            android:id="@+id/spin_roomtype">
-        </Spinner>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:hint="No of house"
-            android:id="@+id/et_num_house"/>
-
-
-    </LinearLayout>
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-
-    <Button
-        android:id="@+id/bt_add_more"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:layout_margin="10dp"
-        android:text="Add"
-        android:background="@drawable/button_background_blue"
-        />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"/>
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:layout_margin="10dp"
-        android:text="Delete"
-        android:background="@drawable/text_background_red"
-        android:id="@+id/bt_delete"
-        />
-
-</LinearLayout>
-
-</LinearLayout>
-            <Button
+            <LinearLayout
+                android:id="@+id/parent_linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/LL_addroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spin_floor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:entries="@array/Floor"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spin_roomtype"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:entries="@array/Room"></Spinner>
+
+                    <EditText
+                        android:id="@+id/et_num_house"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="No of house" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/bt_add_more"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/button_background_blue"
+                        android:text="Add" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+
+                    <Button
+                        android:id="@+id/bt_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/text_background_red"
+                        android:text="Delete" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
                 android:id="@+id/bt_submit"
-                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/button_background_green"
-                />
+                android:text="Submit" />
         </LinearLayout>
 
     </ScrollView>

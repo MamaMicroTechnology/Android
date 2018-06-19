@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +24,8 @@ import static android.app.Activity.RESULT_OK;
 public class AddProjectFragment extends Fragment {
 
     View view,rowView;
-   Button pro_images,pro_documents,bt_add,bt_delete;
+    FragmentTransaction fragmentTransaction;
+   Button pro_images,pro_documents,bt_add,bt_delete,bt_location;
    LinearLayout linearLayout_parent, ll_addroom;
     private static int RESULT_LOAD_IMG = 1;
     private static int RESULT_LOAD_DOC = 1;
@@ -39,11 +42,15 @@ public class AddProjectFragment extends Fragment {
    view = inflater.inflate(R.layout.fragment_add_project, container, false);
         ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Add New Project");
         linearLayout_parent = view.findViewById(R.id.parent_linear);
+        bt_location = view.findViewById(R.id.bt_location);
         ll_addroom = view.findViewById(R.id.LL_addroom);
         bt_add = view.findViewById(R.id.bt_add_more);
         bt_delete = view.findViewById(R.id.bt_delete);
         pro_images  = view.findViewById(R.id.bt_projectimg_selectfile);
         pro_documents = view.findViewById(R.id.bt_gov_selectfile);
+//        mapView.onCreate(null);
+//        mapView.onResume();
+//        mapView.getMapAsync(this);
          pro_documents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +72,7 @@ public class AddProjectFragment extends Fragment {
  
             } 
         });
+        //adding the more room type
        bt_add.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
@@ -77,6 +85,7 @@ public class AddProjectFragment extends Fragment {
 
            }
        });
+       // delete the added room type
         bt_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,6 +95,19 @@ public class AddProjectFragment extends Fragment {
                         linearLayout_parent.removeViewAt(1);
                     }
                 }
+        });
+        // select the location of the user
+        bt_location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.anim.slide_in_right,
+                        R.anim.slide_out_left, R.anim.slide_in_left,
+                        R.anim.slide_out_right);
+                fragmentTransaction.replace(R.id.home_container, new MapFragment());
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
         });
         return view;
     }
@@ -121,6 +143,24 @@ public void onActivityResult(int requestCode, int resultCode, Intent data) {
             Toast.makeText(getContext(), "Something went wrong", Toast.LENGTH_LONG)
                     .show();
         }
-    } 
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getView().setFocusableInTouchMode(true);
+        getView().requestFocus();
+        getView().setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if( event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK )
+                {
+                    getFragmentManager().popBackStack("BS_HOME", 0);
+                    return true;
+                }
+                return false;
+            }
+        });
+    }
 
 }

@@ -13,8 +13,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -36,6 +36,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:theme="@style/TextLabelCommon">
 
                 <EditText
@@ -52,6 +53,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:theme="@style/TextLabelCommon">
 
                 <EditText
@@ -68,6 +70,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:theme="@style/TextLabelCommon">
 
                 <EditText
@@ -84,6 +87,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:theme="@style/TextLabelCommon">
 
                 <EditText
@@ -100,6 +104,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -145,15 +150,10 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:background="#000000" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -198,15 +198,10 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:background="#000000" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -251,15 +246,10 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:background="#000000" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -304,17 +294,11 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:background="#000000" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:text="Government Approvals (Muncipal, BBMP, etc.)"
                 android:textColor="@color/Black"
                 android:textSize="15sp" />
@@ -341,17 +325,11 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:background="#000000" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:text="Project Status*"
                 android:textColor="@color/Black"
                 android:textSize="15sp" />
@@ -516,16 +494,10 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:background="#000000" />
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:theme="@style/TextLabelCommon">
 
                 <EditText
@@ -535,6 +507,7 @@
                     android:layout_marginBottom="5dp"
                     android:hint="Plot Size*"
                     android:textColor="@color/Black"
+                    android:inputType="number"
                     android:textColorHint="@android:color/black" />
             </android.support.design.widget.TextInputLayout>
 
@@ -542,8 +515,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:text="Project Type*"
                 android:textColor="@color/Black"
                 android:textSize="15sp" />
@@ -594,6 +566,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/tv_total_floor_count"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:text="Total() = Basement() + Ground + Floors()"
@@ -601,16 +574,11 @@
                 android:textColor="@color/Black"
                 android:textSize="10sp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:background="#000000" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:theme="@style/TextLabelCommon">
 
                 <EditText
@@ -627,6 +595,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -672,16 +641,10 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:background="#000000" />
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:layout_weight="1"
                 android:theme="@style/TextLabelCommon">
 
@@ -700,7 +663,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:text="Project Images*"
                 android:textColor="@color/Black"
                 android:textSize="15sp" />
@@ -731,7 +694,7 @@
                 android:id="@+id/parent_linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical">
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -744,21 +707,22 @@
                         android:id="@+id/spin_floor"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:entries="@array/Floor"></Spinner>
+                        android:layout_weight="1"></Spinner>
 
                     <Spinner
                         android:id="@+id/spin_roomtype"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="3"
+                        android:layout_weight=".7"
                         android:entries="@array/Room"></Spinner>
 
                     <EditText
                         android:id="@+id/et_num_house"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="2"
+                        android:layout_weight=".2"
+                        android:inputType="number"
+                        android:maxLength="2"
                         android:hint="No of house" />
 
 
@@ -774,10 +738,12 @@
                         android:id="@+id/bt_add_more"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="2"
                         android:background="@drawable/button_background_blue"
-                        android:text="Add" />
+                        android:text="Add"
+                        android:textColor="@color/White"/>
 
                     <View
                         android:layout_width="0dp"
@@ -788,10 +754,12 @@
                         android:id="@+id/bt_delete"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="2"
                         android:background="@drawable/text_background_red"
-                        android:text="Delete" />
+                        android:text="Delete"
+                        android:textColor="@color/White"/>
 
                 </LinearLayout>
 
@@ -801,9 +769,11 @@
                 android:id="@+id/bt_submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/button_background_green"
-                android:text="Submit" />
+                android:text="Submit"
+                android:textColor="@color/White"/>
         </LinearLayout>
 
     </ScrollView>

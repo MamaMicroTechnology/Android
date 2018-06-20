@@ -9,15 +9,14 @@
     <Spinner
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:entries="@array/Floor"
+        android:layout_weight="1"
         android:id="@+id/spin_floor">
     </Spinner>
 
     <Spinner
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
+        android:layout_weight=".7"
         android:entries="@array/Room"
         android:id="@+id/spin_type">
     </Spinner>
@@ -25,7 +24,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight=".2"
         android:hint="No of house"
         android:id="@+id/et_num_house"/>
 

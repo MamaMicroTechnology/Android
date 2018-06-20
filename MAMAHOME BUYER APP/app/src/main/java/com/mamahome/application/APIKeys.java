@@ -10,6 +10,9 @@ public interface APIKeys {
     @POST("/webapp/api/getregister")
     Call<SignUpResponse> getSignInAccess(@Body SignUpRequest signUpRequest);
 
+    @POST("/webapp/api/addProject")
+    Call<AddProjectResponse> Addproject(@Body AddProjectRequest addProjectRequest);
+
     @GET("/webapp/api/login")
     Call<LoginResponse> getLoginAccess (@Query("email") String Email, @Query("password") String Password);
 }

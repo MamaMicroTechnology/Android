@@ -13,6 +13,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toolbar;
 
 public class HomeActivity extends AppCompatActivity {
@@ -22,7 +24,7 @@ public class HomeActivity extends AppCompatActivity {
     Toolbar toolbar;
     FragmentTransaction fragmentTransaction;
     NavigationView navigationView;
-
+    TextView tv_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +47,13 @@ public class HomeActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
 
-        navigationView = (NavigationView) findViewById(R.id.design_navigation_view);
+        SharedPreferences prefs = getSharedPreferences("SP_USER_DATA", MODE_PRIVATE);
+        String userName = prefs.getString("USER_NAME", null);
+
+        navigationView = findViewById(R.id.design_navigation_view);
+        View header = navigationView.getHeaderView(0);
+        tv_name = header.findViewById(R.id.tv_name);
+        tv_name.setText("Hi, "+ userName);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

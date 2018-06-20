@@ -3,21 +3,37 @@ package com.mamahome.application;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 import static android.app.Activity.RESULT_OK;
+import static android.content.Context.MODE_PRIVATE;
 
 
 /**
@@ -30,16 +46,28 @@ public class AddProjectFragment extends Fragment {
     Button pro_images, pro_documents, bt_add, bt_delete, bt_submit;
 
     EditText et_projectName, et_roadName, et_roadWidth, et_address, et_plotSize, et_basementCount, et_floorCount,
-             et_projectSize, et_budget;
+            et_projectSize, et_budget;
+
+    Spinner spinner_floor;
 
     RadioGroup rg_constructionType, rg_RMC, rg_loans, rg_UPVC, rg_budgetType;
 
     RadioButton rb_constructionType, rb_RMC, rb_loans, rb_UPVC, rb_budgetType;
 
     String Project_Name, Road_Name, Road_Width, Address, Plot_Size, Basement_Count, Floor_Count, Project_Size,
-    Budget, Construction_Type, RMC, Loan, UPVC, Budget_Type;
+            Budget, Construction_Type, RMC, Loan, UPVC, Budget_Type, Project_Type, User_ID;
+
+    TextView tv_total_floor_count;
+
+    List<String> spinnerArray;
+    ArrayAdapter<String> adapter;
+
+    //Project Status Tickbox
 
     LinearLayout linearLayout_parent, ll_addroom;
+
+    String ROOT_URL = "http://mamahome360.com";
+    APIKeys APIKeys;
 
     private static int RESULT_LOAD_IMG = 1;
     private static int RESULT_LOAD_DOC = 1;
@@ -65,7 +93,7 @@ public class AddProjectFragment extends Fragment {
         et_projectName = view.findViewById(R.id.et_projectname);
         et_roadName = view.findViewById(R.id.et_roadname);
         et_roadWidth = view.findViewById(R.id.et_roadwidth);
-        et_address = view.findViewById(R.id.et_roadwidth);
+        et_address = view.findViewById(R.id.et_address);
         et_plotSize = view.findViewById(R.id.et_plotsize);
         et_basementCount = view.findViewById(R.id.et_basement_count);
         et_floorCount = view.findViewById(R.id.et_upperfloor_count);
@@ -76,6 +104,70 @@ public class AddProjectFragment extends Fragment {
         rg_loans = view.findViewById(R.id.rg_loan);
         rg_UPVC = view.findViewById(R.id.rg_upvc);
         rg_budgetType = view.findViewById(R.id.rg_budget_type);
+        tv_total_floor_count = view.findViewById(R.id.tv_total_floor_count);
+        spinner_floor = view.findViewById(R.id.spin_floor);
+
+        et_basementCount.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                Basement_Count = et_basementCount.getText().toString();
+                Floor_Count = et_floorCount.getText().toString();
+                if (TextUtils.isEmpty(Basement_Count) || TextUtils.isEmpty(Floor_Count)) {
+
+                } else if (!TextUtils.isEmpty(Basement_Count) && !TextUtils.isEmpty(Floor_Count)) {
+                    int basement = Integer.parseInt(Basement_Count);
+                    int floor = Integer.parseInt(Floor_Count);
+                    int total = basement + 1 + floor;
+                    tv_total_floor_count.setText("Total (" + total + ") = Basement (" + basement + ") + Ground + Floors (" + floor + ")");
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+        et_floorCount.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                Basement_Count = et_basementCount.getText().toString();
+                Floor_Count = et_floorCount.getText().toString();
+                if (TextUtils.isEmpty(Basement_Count) || TextUtils.isEmpty(Floor_Count)) {
+
+                } else if (!TextUtils.isEmpty(Basement_Count) && !TextUtils.isEmpty(Floor_Count)) {
+                    spinnerArray = new ArrayList<String>();
+                    int basement = Integer.parseInt(Basement_Count);
+                    int floor = Integer.parseInt(Floor_Count);
+                    int total = basement + floor;
+                    tv_total_floor_count.setText("Total " + total + " = Basement " + basement + "+ Ground + Floors " + floor);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                int floor = Integer.parseInt(et_floorCount.getText().toString());
+                spinnerArray = new ArrayList<String>();
+                for (int i = 1; i <= floor; i++) {
+                    spinnerArray.add("Floor " + i);
+                }
+                adapter = new ArrayAdapter<String>(
+                        getActivity(), android.R.layout.simple_spinner_item, spinnerArray);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinner_floor.setAdapter(adapter);
+
+            }
+        });
         pro_documents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,6 +189,7 @@ public class AddProjectFragment extends Fragment {
 
             }
         });
+
         bt_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -105,16 +198,22 @@ public class AddProjectFragment extends Fragment {
                 rowView = inflater2.inflate(R.layout.field_project, null);
                 // Add the new row before the add field button.
 
-                linearLayout_parent.addView(rowView, linearLayout_parent.getChildCount() - 1);
+                Spinner spinner_floor1 = rowView.findViewById(R.id.spin_floor);
+                spinner_floor1.setAdapter(adapter);
+                Floor_Count = et_floorCount.getText().toString();
+                if (!TextUtils.isEmpty(Floor_Count)){
+                    linearLayout_parent.addView(rowView, linearLayout_parent.getChildCount() - 1);
+                }
 
             }
         });
+
         bt_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int count = linearLayout_parent.getChildCount();
                 if (count > 2) {
-                    linearLayout_parent.removeViewAt(1);
+                    linearLayout_parent.removeViewAt(count - 2);
                 }
             }
         });
@@ -129,9 +228,14 @@ public class AddProjectFragment extends Fragment {
                 Plot_Size = et_plotSize.getText().toString();
                 Basement_Count = et_basementCount.getText().toString();
                 Floor_Count = et_floorCount.getText().toString();
+                int total = Integer.parseInt(Basement_Count)+Integer.parseInt(Floor_Count);
+                Project_Type = String.valueOf(total);
                 Project_Size = et_projectSize.getText().toString();
                 Budget = et_budget.getText().toString();
-                //Construction_Type RMC, Loan, UPVC, Budget_Type;
+
+                SharedPreferences prefs = getActivity().getSharedPreferences("SP_USER_DATA", MODE_PRIVATE);
+                User_ID = prefs.getString("USER_ID", null);
+
                 int radiobutton = rg_constructionType.getCheckedRadioButtonId();
                 rb_constructionType = view.findViewById(radiobutton);
                 Construction_Type = rb_constructionType.getText().toString();
@@ -146,58 +250,73 @@ public class AddProjectFragment extends Fragment {
 
                 int radiobutton3 = rg_UPVC.getCheckedRadioButtonId();
                 rb_UPVC = view.findViewById(radiobutton2);
-                UPVC = rb_loans.getText().toString();
+                UPVC = rb_UPVC.getText().toString();
 
                 int radiobutton4 = rg_budgetType.getCheckedRadioButtonId();
                 rb_budgetType = view.findViewById(radiobutton2);
                 Budget_Type = rb_budgetType.getText().toString();
 
-                if (TextUtils.isEmpty(Project_Name)){
+                if (TextUtils.isEmpty(Project_Name)) {
                     et_projectName.setError(getString(R.string.cannot_empty));
+                    et_projectName.requestFocus();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Road_Name)){
+                if (TextUtils.isEmpty(Road_Name)) {
                     et_roadName.setError(getString(R.string.cannot_empty));
+                    et_roadName.requestFocus();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Road_Width)){
+                if (TextUtils.isEmpty(Road_Width)) {
                     et_roadWidth.setError(getString(R.string.cannot_empty));
+                    et_roadWidth.requestFocus();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Address)){
+                if (TextUtils.isEmpty(Address)) {
                     et_address.setError(getString(R.string.cannot_empty));
+                    et_address.requestFocus();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Plot_Size)){
+                if (TextUtils.isEmpty(Plot_Size)) {
                     et_plotSize.setError(getString(R.string.cannot_empty));
+                    et_plotSize.requestFocus();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Basement_Count)){
+                if (TextUtils.isEmpty(Basement_Count)) {
                     et_basementCount.setError(getString(R.string.cannot_empty));
+                    et_basementCount.requestFocus();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Floor_Count)){
+                if (TextUtils.isEmpty(Floor_Count)) {
                     et_floorCount.setError(getString(R.string.cannot_empty));
+                    et_floorCount.requestFocus();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Project_Size)){
+                if (TextUtils.isEmpty(Project_Size)) {
                     et_projectSize.setError(getString(R.string.cannot_empty));
+                    et_projectSize.requestFocus();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Budget)){
+                if (TextUtils.isEmpty(Budget)) {
                     et_budget.setError(getString(R.string.cannot_empty));
+                    et_budget.requestFocus();
                     return;
                 }
 
+                Retrofit retrofit = new Retrofit.Builder()
+                        .baseUrl(ROOT_URL)
+                        .addConverterFactory(GsonConverterFactory.create())
+                        .build();
 
+                APIKeys = retrofit.create(APIKeys.class);
+                addProject();
 
 
             }
@@ -238,7 +357,44 @@ public class AddProjectFragment extends Fragment {
         }
     }
 
-    public void addProject(){
+    public void addProject() {
+        AddProjectRequest addProjectRequest = new AddProjectRequest();
+
+        addProjectRequest.setProject_name(Project_Name);
+        addProjectRequest.setRoad_name(Road_Name);
+        addProjectRequest.setRoad_width(Road_Width);
+        addProjectRequest.setAddress(Address);
+        addProjectRequest.setConstruction_type(Construction_Type);
+        addProjectRequest.setInterested_in_rmc(RMC);
+        addProjectRequest.setInterested_in_loan(Loan);
+        addProjectRequest.setInterested_in_doorsandwindows(UPVC);
+        //addProjectRequest.setMunicipality_approval("text.png");
+        addProjectRequest.setProject_status("Planning");
+        addProjectRequest.setPlotsize(Plot_Size);
+        addProjectRequest.setProject_type(Project_Type);
+        addProjectRequest.setProject_size(Project_Size);
+        addProjectRequest.setBudgetType(Budget_Type);
+        addProjectRequest.setBudget(Budget);
+        //addProjectRequest.setImage("test.png");
+        addProjectRequest.setAndroid_user(User_ID);
+
+        Call<AddProjectResponse> addProjectResponseCall = APIKeys.Addproject(addProjectRequest);
+
+        addProjectResponseCall.enqueue(new Callback<AddProjectResponse>() {
+            @Override
+            public void onResponse(Call<AddProjectResponse> call, Response<AddProjectResponse> response) {
+                int statusCode = response.code();
+
+                AddProjectResponse addProjectResponse = response.body();
+                //String APIresponse = response.body().getMessage();
+                Toast.makeText(getContext(), "on Success " + statusCode , Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onFailure(Call<AddProjectResponse> call, Throwable t) {
+                Toast.makeText(getContext(), "on Failure " + t.getMessage() , Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 

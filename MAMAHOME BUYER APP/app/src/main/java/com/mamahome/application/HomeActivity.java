@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
     private ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
     FragmentTransaction fragmentTransaction;
-    NavigationView navigationView;
+    NavigationView design_navigation_view;
     TextView tv_name;
 
     @Override
@@ -50,12 +50,12 @@ public class HomeActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("SP_USER_DATA", MODE_PRIVATE);
         String userName = prefs.getString("USER_NAME", null);
 
-        navigationView = findViewById(R.id.design_navigation_view);
-        View header = navigationView.getHeaderView(0);
+        design_navigation_view = findViewById(R.id.design_navigation_view);
+        View header = design_navigation_view.getHeaderView(0);
         tv_name = header.findViewById(R.id.tv_name);
         tv_name.setText("Hi, "+ userName);
 
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        design_navigation_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {

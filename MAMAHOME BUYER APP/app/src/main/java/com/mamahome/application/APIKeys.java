@@ -13,6 +13,9 @@ public interface APIKeys {
     @POST("/webapp/api/addProject")
     Call<AddProjectResponse> Addproject(@Body AddProjectRequest addProjectRequest);
 
+    @POST("/webapp/api/addEnquiry")
+    Call<AddEnquiryResponse> Addenquiry(@Body AddEnquiryRequest addEnquiryRequest);
+
     @GET("/webapp/api/login")
     Call<LoginResponse> getLoginAccess (@Query("email") String Email, @Query("password") String Password);
 }

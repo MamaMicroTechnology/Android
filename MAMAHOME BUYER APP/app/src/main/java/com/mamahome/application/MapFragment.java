@@ -15,6 +15,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -31,6 +32,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     private GoogleMap mMap;
     MapView mapView;
     LocationManager locationManager;
+    Button bt_map_submit;
 
     @Nullable
     @Override
@@ -47,9 +49,17 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         mapView.onCreate(null);
         mapView.onResume();
         mapView.getMapAsync(this);
+        bt_map_submit = view.findViewById(R.id.bt_submit_map);
+        bt_map_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().onBackPressed();
+            }
+        });
     return  view;
 
     }
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {

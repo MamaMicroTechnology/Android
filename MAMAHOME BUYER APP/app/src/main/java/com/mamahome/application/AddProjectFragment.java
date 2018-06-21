@@ -211,6 +211,7 @@ public class AddProjectFragment extends Fragment {
                 showFileChooser();
             }
         });
+        //
 
         bt_add.setOnClickListener(new View.OnClickListener() {
             @Override

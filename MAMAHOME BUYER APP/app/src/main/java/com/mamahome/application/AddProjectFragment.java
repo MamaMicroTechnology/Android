@@ -25,12 +25,15 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.ceylonlabs.imageviewpopup.ImagePopup;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -52,6 +55,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class AddProjectFragment extends Fragment {
 
     View view, rowView;
+    ImagePopup imagePopup;
 
     //Image request code
     private int PICK_IMAGE_REQUEST = 1;
@@ -69,6 +73,8 @@ public class AddProjectFragment extends Fragment {
 
     EditText et_projectName, et_roadName, et_roadWidth, et_address, et_plotSize, et_basementCount, et_floorCount,
             et_projectSize, et_budget;
+
+    ImageView iv_project_imageselected;
 
     Spinner spinner_floor;
 
@@ -106,6 +112,7 @@ public class AddProjectFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_add_project, container, false);
         ((HomeActivity) getActivity()).getSupportActionBar().setTitle("Add New Project");
         requestStoragePermission();
+        imagePopup = new ImagePopup(getContext());
         linearLayout_parent = view.findViewById(R.id.parent_linear);
         ll_addroom = view.findViewById(R.id.LL_addroom);
         bt_add = view.findViewById(R.id.bt_add_more);
@@ -129,6 +136,7 @@ public class AddProjectFragment extends Fragment {
         rg_budgetType = view.findViewById(R.id.rg_budget_type);
         tv_total_floor_count = view.findViewById(R.id.tv_total_floor_count);
         spinner_floor = view.findViewById(R.id.spin_floor);
+        iv_project_imageselected = view.findViewById(R.id.iv_project_imageselected);
 
         et_basementCount.addTextChangedListener(new TextWatcher() {
             @Override
@@ -242,8 +250,10 @@ public class AddProjectFragment extends Fragment {
                 Plot_Size = et_plotSize.getText().toString();
                 Basement_Count = et_basementCount.getText().toString();
                 Floor_Count = et_floorCount.getText().toString();
-                int total = Integer.parseInt(Basement_Count)+Integer.parseInt(Floor_Count);
-                Project_Type = String.valueOf(total);
+                if (!TextUtils.isEmpty(et_basementCount.getText().toString()) && !TextUtils.isEmpty(et_floorCount.getText().toString())){
+                    int total = Integer.parseInt(Basement_Count)+Integer.parseInt(Floor_Count);
+                    Project_Type = String.valueOf(total);
+                    }
                 Project_Size = et_projectSize.getText().toString();
                 Budget = et_budget.getText().toString();
 
@@ -395,7 +405,15 @@ public class AddProjectFragment extends Fragment {
             filePath = data.getData();
             try {
                 bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), filePath);
-                ///////imageView.setImageBitmap(bitmap);
+                iv_project_imageselected.setImageBitmap(bitmap);
+                iv_project_imageselected.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        imagePopup.setImageOnClickClose(true);
+                        imagePopup.initiatePopup(iv_project_imageselected.getDrawable());
+                        imagePopup.viewPopup();
+                    }
+                });
 
             } catch (IOException e) {
                 e.printStackTrace();

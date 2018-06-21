@@ -29,6 +29,7 @@ dependencies {
     implementation 'com.android.support:support-v4:27.1.1'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'net.gotev:uploadservice:2.1'
+    implementation 'com.github.chathuralakmal:AndroidImagePopup:1.2.1'
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:design:27.1.1'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

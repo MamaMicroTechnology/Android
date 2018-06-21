@@ -33,6 +33,49 @@
                 android:layout_marginTop="5dp"
                 android:background="#000000" />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/layout_map">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/bt_location"
+                    android:text="Select Location"
+                    android:textColor="@color/White"
+                    android:background="@drawable/text_background_orange"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_latitude"
+                    android:gravity="center"
+                    android:hint="latitude"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="logitude"
+                    android:gravity="center"
+                    android:id="@+id/tv_logitude"/>
+
+            </LinearLayout>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

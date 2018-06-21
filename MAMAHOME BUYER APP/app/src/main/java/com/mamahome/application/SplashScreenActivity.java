@@ -15,6 +15,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     ImageView iv_logo;
     ImageView iv_building;
     ConstraintLayout cl_splashscreeen;
+    private PrefManager prefManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,19 +57,30 @@ public class SplashScreenActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                SharedPreferences prefs = getSharedPreferences("SP_USER_DATA", MODE_PRIVATE);
-                Boolean check_user_status = prefs.getBoolean("USER_LOGGED_IN", false);
-                cl_splashscreeen.setVisibility(View.GONE);
-                if(check_user_status.equals(true)){
-                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                    startActivity(intent);
-                    finish();
+
+                prefManager = new PrefManager(SplashScreenActivity.this);
+                //prefManager.setFirstTimeLaunch(true);
+                if (prefManager.isFirstTimeLaunch()) {
+                    launchHomeScreen();
+                    //finish();
                 }
-                else if (check_user_status.equals(false)){
-                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                    startActivity(intent);
-                    finish();
+                else{
+                    SharedPreferences prefs = getSharedPreferences("SP_USER_DATA", MODE_PRIVATE);
+                    Boolean check_user_status = prefs.getBoolean("USER_LOGGED_IN", false);
+                    cl_splashscreeen.setVisibility(View.GONE);
+                    if(check_user_status.equals(true)){
+                        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                    else if (check_user_status.equals(false)){
+                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
+
+
             }
 
             @Override
@@ -76,6 +88,8 @@ public class SplashScreenActivity extends AppCompatActivity {
 
             }
         });
+
+
 
         toTop.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -94,5 +108,10 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void launchHomeScreen() {
+        startActivity(new Intent(SplashScreenActivity.this, WelcomeActivity.class));
+        finish();
     }
 }

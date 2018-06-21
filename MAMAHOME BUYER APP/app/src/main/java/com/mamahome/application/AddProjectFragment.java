@@ -19,6 +19,8 @@ import android.support.v4.content.ContextCompat;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.support.v4.app.FragmentTransaction;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -97,6 +99,10 @@ public class AddProjectFragment extends Fragment {
     String ROOT_URL = "http://mamahome360.com";
     APIKeys APIKeys;
 
+    View view,rowView;
+    FragmentTransaction fragmentTransaction;
+   Button pro_images,pro_documents,bt_add,bt_delete,bt_location;
+   LinearLayout linearLayout_parent, ll_addroom;
     private static int RESULT_LOAD_IMG = 1;
     private static int RESULT_LOAD_DOC = 1;
 
@@ -114,6 +120,7 @@ public class AddProjectFragment extends Fragment {
         requestStoragePermission();
         imagePopup = new ImagePopup(getContext());
         linearLayout_parent = view.findViewById(R.id.parent_linear);
+        bt_location = view.findViewById(R.id.bt_location);
         ll_addroom = view.findViewById(R.id.LL_addroom);
         bt_add = view.findViewById(R.id.bt_add_more);
         bt_delete = view.findViewById(R.id.bt_delete);
@@ -139,6 +146,10 @@ public class AddProjectFragment extends Fragment {
         iv_project_imageselected = view.findViewById(R.id.iv_project_imageselected);
 
         et_basementCount.addTextChangedListener(new TextWatcher() {
+//        mapView.onCreate(null);
+//        mapView.onResume();
+//        mapView.getMapAsync(this);
+         pro_documents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -211,7 +222,12 @@ public class AddProjectFragment extends Fragment {
                 showFileChooser();
             }
         });
+        //adding the more room type
+       bt_add.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
 
+                }
         bt_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -229,7 +245,9 @@ public class AddProjectFragment extends Fragment {
 
             }
         });
-
+           }
+       });
+       // delete the added room type
         bt_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -343,6 +361,19 @@ public class AddProjectFragment extends Fragment {
                 addProject();
 
 
+            }
+        });
+        // select the location of the user
+        bt_location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.anim.slide_in_right,
+                        R.anim.slide_out_left, R.anim.slide_in_left,
+                        R.anim.slide_out_right);
+                fragmentTransaction.replace(R.id.home_container, new MapFragment());
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
         return view;
@@ -469,6 +500,24 @@ public class AddProjectFragment extends Fragment {
                 Toast.makeText(getContext(), "Oops you just denied the permission", Toast.LENGTH_LONG).show();
             }
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getView().setFocusableInTouchMode(true);
+        getView().requestFocus();
+        getView().setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if( event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK )
+                {
+                    getFragmentManager().popBackStack("BS_HOME", 0);
+                    return true;
+                }
+                return false;
+            }
+        });
     }
 
 }

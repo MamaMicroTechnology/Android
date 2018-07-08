@@ -16,6 +16,10 @@ public class SplashScreenActivity extends AppCompatActivity {
     ImageView iv_building;
     ConstraintLayout cl_splashscreeen;
     private PrefManager prefManager;
+    Animation toTop;
+    Animation fadeout;
+    Animation growbig;
+    Animation growbig1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,17 +30,25 @@ public class SplashScreenActivity extends AppCompatActivity {
         iv_building = (ImageView) findViewById(R.id.iv_building);
         cl_splashscreeen = (ConstraintLayout) findViewById(R.id.activity_launcher_splash_screen);
 
-        final Animation toTop = AnimationUtils.loadAnimation(getBaseContext(), R.anim.totop);
-        final Animation fadeout = AnimationUtils.loadAnimation(getBaseContext(), R.anim.fadeout);
-        final Animation growbig = AnimationUtils.loadAnimation(getBaseContext(), R.anim.growbig);
-        final Animation growbig1 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.growbig);
+        toTop = AnimationUtils.loadAnimation(getBaseContext(), R.anim.totop);
+        fadeout = AnimationUtils.loadAnimation(getBaseContext(), R.anim.fadeout);
+        growbig = AnimationUtils.loadAnimation(getBaseContext(), R.anim.growbig);
+        growbig1 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.growbig);
+        doAnimation();
+    }
 
+    private void launchWelcomeScreen() {
+        startActivity(new Intent(SplashScreenActivity.this, WelcomeActivity.class));
+        finish();
+    }
+
+    private void doAnimation(){
         iv_logo.startAnimation(growbig);
 
         growbig.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                iv_building.startAnimation(toTop);
+                iv_building.startAnimation(growbig1);
             }
 
             @Override
@@ -61,7 +73,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 prefManager = new PrefManager(SplashScreenActivity.this);
                 //prefManager.setFirstTimeLaunch(true);
                 if (prefManager.isFirstTimeLaunch()) {
-                    launchHomeScreen();
+                    launchWelcomeScreen();
                     //finish();
                 }
                 else{
@@ -91,10 +103,10 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
 
-        toTop.setAnimationListener(new Animation.AnimationListener() {
+        /*toTop.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                iv_building.startAnimation(growbig1);
+                //iv_building.startAnimation(growbig1);
             }
 
             @Override
@@ -106,12 +118,8 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void onAnimationRepeat(Animation animation) {
 
             }
-        });
+        });*/
 
     }
 
-    private void launchHomeScreen() {
-        startActivity(new Intent(SplashScreenActivity.this, WelcomeActivity.class));
-        finish();
-    }
 }

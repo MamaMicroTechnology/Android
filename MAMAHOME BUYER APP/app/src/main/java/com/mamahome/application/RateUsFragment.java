@@ -14,6 +14,8 @@ import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import butterknife.ButterKnife;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -38,6 +40,7 @@ public class RateUsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_rate_us, container, false);
+        ButterKnife.bind(this, view);
         setRetainInstance(true);
 
         cl_rateus = (ConstraintLayout) view.findViewById(R.id.cl_rateus);

@@ -6,11 +6,25 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import butterknife.ButterKnife;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 /**
@@ -22,6 +36,12 @@ public class EnquiriesFragment extends Fragment {
     FloatingActionButton fabt_addenquiry;
     TextView tv_addnewenquiry;
     FragmentTransaction fragmentTransaction;
+    RecyclerView recyclerViewEnquiries;
+    APIKeys APIKeys;
+    String ROOT_URL = "http://mamahome360.com";
+    String User_ID;
+    private ArrayList<Enquiry> enquiries;
+    private EnquiriesAdapter enquiriesAdapter;
 
     public EnquiriesFragment() {
         // Required empty public constructor
@@ -33,6 +53,7 @@ public class EnquiriesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_enquiries, container, false);
+        ButterKnife.bind(this, view);
         setRetainInstance(true);
 
         fabt_addenquiry = (FloatingActionButton) view.findViewById(R.id.fabt_addenquiry);
@@ -57,9 +78,43 @@ public class EnquiriesFragment extends Fragment {
             }
         });
 
+        recyclerViewEnquiries = view.findViewById(R.id.rv_enquiries);
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
+        recyclerViewEnquiries.setLayoutManager(staggeredGridLayoutManager);
+        getEnquiries();
+
         ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Enquiries");
 
         return view;
+    }
+
+    private void getEnquiries(){
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(ROOT_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        APIKeys = retrofit.create(APIKeys.class);
+        Call<EnquiriesList> enquiriesListCall = APIKeys.viewEnquiries("13213");
+
+        enquiriesListCall.enqueue(new Callback<EnquiriesList>() {
+            @Override
+            public void onResponse(Call<EnquiriesList> call, Response<EnquiriesList> response) {
+                //Toast.makeText(getContext(), "Success" + response.body().getProjects(), Toast.LENGTH_LONG).show();
+
+                EnquiriesList enquiriesList = response.body();
+                enquiries = new ArrayList<>(Arrays.asList(enquiriesList.getEnquiries()));
+                enquiriesAdapter = new EnquiriesAdapter(getContext(), enquiries);
+                recyclerViewEnquiries.setAdapter(enquiriesAdapter);
+                //recyclerViewProjects.setAdapter(new ProjectsAdapter(getContext(), projectsList.getProjects()));
+            }
+
+            @Override
+            public void onFailure(Call<EnquiriesList> call, Throwable t) {
+                Log.d("faliure message", t.getMessage());
+                Toast.makeText(getContext(), "on Failure " + t.getMessage() , Toast.LENGTH_LONG).show();
+
+            }
+        });
     }
 
     @Override

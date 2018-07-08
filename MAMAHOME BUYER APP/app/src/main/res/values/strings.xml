@@ -6,6 +6,7 @@
     <string name="welcome_message">Welcome to Mamahome!</string>
     <string name="rate_us">We would love to hear back from you!</string>
     <string name="submit">Submit</string>
+    <string name="maps_api_key">AIzaSyA5k-gF2_ZfQZucxuqVtTfG4R8ZkNjAsCA</string>
     <string name="ty_ratingus">Thank you for your honest feedback. :)</string>
 
     <string-array name="Floor">

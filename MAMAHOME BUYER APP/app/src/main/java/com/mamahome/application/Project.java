@@ -1,30 +1,96 @@
 package com.mamahome.application;
 
-public class AddProjectRequest {
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
+public class Project {
+
+    @SerializedName("project_name")
+    @Expose
     private String project_name;
+    @SerializedName("road_name")
+    @Expose
     private String road_name;
+    @SerializedName("road_width")
+    @Expose
     private String road_width;
+    @SerializedName("address")
+    @Expose
     private String address;
+    @SerializedName("construction_type")
+    @Expose
     private String construction_type;
+    @SerializedName("interested_in_rmc")
+    @Expose
     private String interested_in_rmc;
+    @SerializedName("interested_in_loan")
+    @Expose
     private String interested_in_loan;
+    @SerializedName("interested_in_doorsandwindows")
+    @Expose
     private String interested_in_doorsandwindows;
+    @SerializedName("municipality_approval")
+    @Expose
     private String municipality_approval;
+    @SerializedName("project_status")
+    @Expose
     private String project_status;
+    @SerializedName("plotsize")
+    @Expose
     private String plotsize;
+    @SerializedName("project_type")
+    @Expose
     private String project_type;
+    @SerializedName("project_size")
+    @Expose
     private String project_size;
+    @SerializedName("budgetType")
+    @Expose
     private String budgetType;
+    @SerializedName("budget")
+    @Expose
     private String budget;
-    private String image;
-    private String userid;
+    @SerializedName("basement")
+    @Expose
     private String basement;
+    @SerializedName("ground")
+    @Expose
     private String ground;
+    @SerializedName("latitude")
+    @Expose
     private String latitude;
+    @SerializedName("longitude")
+    @Expose
     private String longitude;
+    @SerializedName("image")
+    @Expose
+    private String image;
+    @SerializedName("user_id")
+    @Expose
+    private String user_id;
 
-    public AddProjectRequest() {
+    public Project(String project_name, String road_name, String road_width, String address, String construction_type, String interested_in_rmc, String interested_in_loan, String interested_in_doorsandwindows, String municipality_approval, String project_status, String plotsize, String project_type, String project_size, String budgetType, String budget, String basement, String ground, String latitude, String longitude, String image, String user_id) {
+        this.project_name = project_name;
+        this.road_name = road_name;
+        this.road_width = road_width;
+        this.address = address;
+        this.construction_type = construction_type;
+        this.interested_in_rmc = interested_in_rmc;
+        this.interested_in_loan = interested_in_loan;
+        this.interested_in_doorsandwindows = interested_in_doorsandwindows;
+        this.municipality_approval = municipality_approval;
+        this.project_status = project_status;
+        this.plotsize = plotsize;
+        this.project_type = project_type;
+        this.project_size = project_size;
+        this.budgetType = budgetType;
+        this.budget = budget;
+        this.basement = basement;
+        this.ground = ground;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.image = image;
+        this.user_id = user_id;
     }
 
     public String getProject_name() {
@@ -155,12 +221,12 @@ public class AddProjectRequest {
         this.image = image;
     }
 
-    public String getUserid() {
-        return userid;
+    public String getUser_id() {
+        return user_id;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
     public String getBasement() {

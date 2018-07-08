@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import butterknife.ButterKnife;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -35,6 +37,7 @@ public class OrdersFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_orders, container, false);
+        ButterKnife.bind(this, view);
         setRetainInstance(true);
 
         tabLayout = (TabLayout) view.findViewById(R.id.tabs_orders);

@@ -13,9 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -72,10 +69,6 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
 
-                Gson gson = new GsonBuilder()
-                        .setLenient()
-                        .create();
-
                 Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl(ROOT_URL)
                         .addConverterFactory(GsonConverterFactory.create())
@@ -109,11 +102,13 @@ public class LoginActivity extends AppCompatActivity {
                 else if(response.body().getMessage().equals("true")){
                     String UserID = response.body().getUserid();
                     String UserName = response.body().getUserName();
+                    String phoneNumber = response.body().getPhoneNumber();
                     SharedPreferences pref = getApplicationContext().getSharedPreferences("SP_USER_DATA", MODE_PRIVATE);
                     SharedPreferences.Editor editor = pref.edit();
                     editor.putBoolean("USER_LOGGED_IN", true);
                     editor.putString("USER_ID", UserID);
                     editor.putString("USER_NAME", UserName);
+                    editor.putString("USER_NUMBER", phoneNumber);
                     editor.apply();
                     Intent home = new Intent(getApplicationContext(), HomeActivity.class);
                     startActivity(home);

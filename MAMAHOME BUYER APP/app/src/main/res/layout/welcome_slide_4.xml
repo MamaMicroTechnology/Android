@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/img_width_height"
         android:layout_marginBottom="50dp"
-        android:src="@drawable/fourth_slide" />
+        android:src="@mipmap/fourth_slide" />
     </RelativeLayout>
 
 

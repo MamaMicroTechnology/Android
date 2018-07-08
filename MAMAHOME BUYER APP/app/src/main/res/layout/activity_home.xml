@@ -20,11 +20,11 @@
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
-        android:id="@+id/design_navigation_view"
+        android:id="@+id/nv_home"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
-        app:itemTextColor="@color/White"
+        android:background="@color/White"
+        app:itemTextColor="@color/Black"
         app:itemIconTint="@color/Black"
         app:menu="@menu/home_menu"
         android:layout_gravity="start"

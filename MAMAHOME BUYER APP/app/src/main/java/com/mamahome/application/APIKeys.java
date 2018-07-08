@@ -1,5 +1,7 @@
 package com.mamahome.application;
 
+import com.mamahome.application.Products.ProductList;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -13,9 +15,18 @@ public interface APIKeys {
     @POST("/webapp/api/addProject")
     Call<AddProjectResponse> Addproject(@Body AddProjectRequest addProjectRequest);
 
-    @POST("/webapp/api/addEnquiry")
+    @POST("/webapp/api/addenquiry")
     Call<AddEnquiryResponse> Addenquiry(@Body AddEnquiryRequest addEnquiryRequest);
 
     @GET("/webapp/api/login")
     Call<LoginResponse> getLoginAccess (@Query("email") String Email, @Query("password") String Password);
+
+    @GET("/webapp/api/getproject")
+    Call<ProjectsList> viewProject (@Query("user_id") String User_ID);
+
+    @GET("/webapp/api/getenq")
+    Call<EnquiriesList> viewEnquiries (@Query("project_id") String project_id);
+
+    @GET("/webapp/api/brand")
+    Call<ProductList> PRODUCT_LIST_CALL();
 }

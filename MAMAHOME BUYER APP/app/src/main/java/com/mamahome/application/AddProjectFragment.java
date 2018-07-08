@@ -19,6 +19,7 @@ import android.support.v4.content.ContextCompat;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,10 +36,12 @@ import android.widget.Toast;
 
 import com.ceylonlabs.imageviewpopup.ImagePopup;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -85,7 +88,7 @@ public class AddProjectFragment extends Fragment {
     RadioButton rb_constructionType, rb_RMC, rb_loans, rb_UPVC, rb_budgetType;
 
     String Project_Name, Road_Name, Road_Width, Address, Plot_Size, Basement_Count, Floor_Count, Project_Size,
-            Budget, Construction_Type, RMC, Loan, UPVC, Budget_Type, Project_Type, User_ID;
+            Budget, Construction_Type, RMC, Loan, UPVC, Budget_Type, Project_Type, User_ID, imgString;
 
     TextView tv_total_floor_count;
 
@@ -112,6 +115,7 @@ public class AddProjectFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_add_project, container, false);
+        ButterKnife.bind(this, view);
         ((HomeActivity) getActivity()).getSupportActionBar().setTitle("Add New Project");
         requestStoragePermission();
         imagePopup = new ImagePopup(getContext());
@@ -123,7 +127,7 @@ public class AddProjectFragment extends Fragment {
         bt_submit = view.findViewById(R.id.bt_submit);
         pro_images = view.findViewById(R.id.bt_projectimg_selectfile);
         pro_documents = view.findViewById(R.id.bt_gov_selectfile);
-        et_projectName = view.findViewById(R.id.et_projectname);
+        et_projectName = view.findViewById(R.id.et_project_id);
         et_roadName = view.findViewById(R.id.et_roadname);
         et_roadWidth = view.findViewById(R.id.et_roadwidth);
         et_address = view.findViewById(R.id.et_address);
@@ -386,8 +390,12 @@ public class AddProjectFragment extends Fragment {
         addProjectRequest.setProject_size(Project_Size);
         addProjectRequest.setBudgetType(Budget_Type);
         addProjectRequest.setBudget(Budget);
-        //addProjectRequest.setImage("test.png");
-        addProjectRequest.setAndroid_user(User_ID);
+        addProjectRequest.setImage(imgString);
+        addProjectRequest.setUserid(User_ID);
+        addProjectRequest.setBasement(Basement_Count);
+        addProjectRequest.setGround(Floor_Count);
+        addProjectRequest.setLatitude("12.972592");
+        addProjectRequest.setLongitude("77.564412");
 
         Call<AddProjectResponse> addProjectResponseCall = APIKeys.Addproject(addProjectRequest);
 
@@ -397,8 +405,9 @@ public class AddProjectFragment extends Fragment {
                 int statusCode = response.code();
 
                 AddProjectResponse addProjectResponse = response.body();
-                //String APIresponse = response.body().getMessage();
+                String APIresponse = response.body().getMessage();
                 Toast.makeText(getContext(), "on Success " + statusCode , Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "on Success " + APIresponse , Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -426,6 +435,13 @@ public class AddProjectFragment extends Fragment {
             try {
                 bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), filePath);
                 iv_project_imageselected.setImageBitmap(bitmap);
+
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
+                byte[] byteFormat = stream.toByteArray();
+                // get the base 64 string
+                imgString = Base64.encodeToString(byteFormat, Base64.NO_WRAP);
+
                 iv_project_imageselected.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

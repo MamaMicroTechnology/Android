@@ -13,6 +13,9 @@ public class LoginResponse {
     @SerializedName("userName")
     @Expose
     private String userName;
+    @SerializedName("phoneNumber")
+    @Expose
+    private String phoneNumber;
 
     public String getMessage() {
         return message;
@@ -24,5 +27,9 @@ public class LoginResponse {
 
     public String getUserName() {
         return userName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 }

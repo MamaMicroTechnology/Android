@@ -14,7 +14,7 @@
             android:layout_height="@dimen/img_width_height"
             android:id="@+id/im_slide1"
             android:layout_marginBottom="50dp"
-            android:src="@drawable/first_slide"
+            android:src="@mipmap/first_slide"
           />
 
 

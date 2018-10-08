@@ -7,6 +7,7 @@
     <string name="rate_us">We would love to hear back from you!</string>
     <string name="submit">Submit</string>
     <string name="maps_api_key">AIzaSyA5k-gF2_ZfQZucxuqVtTfG4R8ZkNjAsCA</string>
+    <string name="maps_api_static">AIzaSyB-id7em4GdsqAgxAUDBMRVAt_ApWOv-zk</string>
     <string name="ty_ratingus">Thank you for your honest feedback. :)</string>
 
     <string-array name="Floor">
@@ -47,5 +48,8 @@
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
+    <string name="please_select_project_to_view_any_exsisting_enquiry_or_make_a_new_enquiry">Please Select Project To View Any Exsisting Enquiry \n Or Make A New Enquiry</string>
+    <string name="search_project_name">Search Project Name</string>
+    <string name="select_project_to_enquire">Select Project To Enquire</string>
 
 </resources>

@@ -8,23 +8,24 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@color/White">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/White"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp">
 
 
     <ImageView
-        android:layout_width="250dp"
+        android:id="@+id/iv_logoMama"
+        android:layout_width="200dp"
         android:layout_height="250dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp"
-        android:src="@mipmap/ic_launcher" />
+        android:scaleType="fitXY"/>
 
         <LinearLayout
             android:focusable="true"
@@ -141,10 +142,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:background="@null"
+            android:background="@color/colorPrimary"
             android:text="SIGN UP"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/White"
             android:textSize="15dp"
             android:layout_weight=".5"/>
 

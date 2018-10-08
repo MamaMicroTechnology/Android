@@ -14,6 +14,9 @@ public class Brand {
     @SerializedName("brand")
     @Expose
     private String brand;
+    @SerializedName("brandimage")
+    @Expose
+    private String brandimage;
 
     public String getId() {
         return id;
@@ -37,5 +40,13 @@ public class Brand {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public String getBrandimage() {
+        return brandimage;
+    }
+
+    public void setBrandimage(String brandimage) {
+        this.brandimage = brandimage;
     }
 }

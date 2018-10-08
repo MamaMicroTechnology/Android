@@ -5,12 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/OffWhite"
     tools:context=".OrdersFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:visibility="gone"
         android:gravity="end">
 
         <TextView
@@ -43,9 +45,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
         android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="4dp"
         app:tabBackground="@drawable/tab_selector"
-        app:tabIndicatorColor="@color/colorPrimary"
-        app:tabTextColor="@color/White"
+        app:tabIndicatorColor="@color/White"
+        app:tabTextColor="@color/OffWhite"
         app:tabSelectedTextColor="@color/White"
         app:tabIndicatorHeight="1.5dp" />
 

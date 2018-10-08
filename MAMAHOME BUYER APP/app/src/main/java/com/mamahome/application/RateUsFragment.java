@@ -9,6 +9,8 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
@@ -28,6 +30,7 @@ public class RateUsFragment extends Fragment {
     RelativeLayout rl_rateus;
     RatingBar rb_rateus;
     Button bt_rate;
+    Animation anim;
 
 
     public RateUsFragment() {
@@ -42,6 +45,7 @@ public class RateUsFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_rate_us, container, false);
         ButterKnife.bind(this, view);
         setRetainInstance(true);
+        anim = AnimationUtils.loadAnimation(getContext(), R.anim.fadein);
 
         cl_rateus = (ConstraintLayout) view.findViewById(R.id.cl_rateus);
         rl_rateus = (RelativeLayout) view.findViewById(R.id.rl_rateus);
@@ -55,10 +59,29 @@ public class RateUsFragment extends Fragment {
                 if(rating >= .5){
                     cl_rateus.setVisibility(View.GONE);
                     rl_rateus.setVisibility(View.VISIBLE);
+                    rl_rateus.setAnimation(anim);
                 }
                 else{
                     Toast.makeText(getContext(), "Please Choose Your Rating First!", Toast.LENGTH_LONG).show();
                 }
+
+            }
+        });
+
+        anim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                ((HomeActivity)getActivity()).MarkHomeItemSelected(0);
+                getFragmentManager().popBackStack("BS_HOME", 0);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
 
             }
         });
@@ -80,6 +103,7 @@ public class RateUsFragment extends Fragment {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if(event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK )
                 {
+                    ((HomeActivity)getActivity()).MarkHomeItemSelected(0);
                     getFragmentManager().popBackStack("BS_HOME", 0);
                     return true;
                 }

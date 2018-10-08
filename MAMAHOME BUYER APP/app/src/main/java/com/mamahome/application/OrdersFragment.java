@@ -55,7 +55,7 @@ public class OrdersFragment extends Fragment {
         fbt_addOrder = (FloatingActionButton) view.findViewById(R.id.fbt_addOrder);
         fbt_addOrder.setImageDrawable(ContextCompat.getDrawable(view.getContext(), R.drawable.ic_add_white));
 
-        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Orders");
+        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Order");
 
         return view;
     }
@@ -70,6 +70,7 @@ public class OrdersFragment extends Fragment {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if(event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK )
                 {
+                    ((HomeActivity)getActivity()).MarkHomeItemSelected(0);
                     getFragmentManager().popBackStack("BS_HOME", 0);
                     return true;
                 }

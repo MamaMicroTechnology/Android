@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/White">
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/close"
+        android:layout_gravity="end"
+        android:gravity="center"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/fourth_slide"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"/>
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Title"
+            android:textColor="@color/Black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Category :"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="@color/Black"/>
+            <TextView
+                android:id="@+id/tv_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Brand :"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="@color/Black"/>
+            <TextView
+                android:id="@+id/tv_sub_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Sub Category :"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="@color/Black"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1">
+
+    <Button
+        android:id="@+id/bt_enquire"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"
+        android:text="Enquire"
+        android:layout_margin="6dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background_green"
+        android:textColor="@color/White"/>
+
+        </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

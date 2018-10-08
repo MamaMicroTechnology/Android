@@ -1,7 +1,10 @@
 package com.mamahome.application;
 
+import java.util.ArrayList;
+
 public class AddProjectRequest {
 
+    private String project_id;
     private String project_name;
     private String road_name;
     private String road_width;
@@ -11,8 +14,8 @@ public class AddProjectRequest {
     private String interested_in_loan;
     private String interested_in_doorsandwindows;
     private String municipality_approval;
-    private String project_status;
-    private String plotsize;
+    private ArrayList<String> project_status;
+    private String size;
     private String project_type;
     private String project_size;
     private String budgetType;
@@ -23,6 +26,8 @@ public class AddProjectRequest {
     private String ground;
     private String latitude;
     private String longitude;
+    private String length;
+    private String breadth;
 
     public AddProjectRequest() {
     }
@@ -99,20 +104,20 @@ public class AddProjectRequest {
         this.municipality_approval = municipality_approval;
     }
 
-    public String getProject_status() {
+    public ArrayList<String> getProject_status() {
         return project_status;
     }
 
-    public void setProject_status(String project_status) {
+    public void setProject_status(ArrayList<String> project_status) {
         this.project_status = project_status;
     }
 
-    public String getPlotsize() {
-        return plotsize;
+    public String getSize() {
+        return size;
     }
 
-    public void setPlotsize(String plotsize) {
-        this.plotsize = plotsize;
+    public void setSize(String size) {
+        this.size = size;
     }
 
     public String getProject_type() {
@@ -193,5 +198,29 @@ public class AddProjectRequest {
 
     public void setLongitude(String longitude) {
         this.longitude = longitude;
+    }
+
+    public String getLength() {
+        return length;
+    }
+
+    public void setLength(String length) {
+        this.length = length;
+    }
+
+    public String getBreadth() {
+        return breadth;
+    }
+
+    public void setBreadth(String breadth) {
+        this.breadth = breadth;
+    }
+
+    public String getProject_id() {
+        return project_id;
+    }
+
+    public void setProject_id(String project_id) {
+        this.project_id = project_id;
     }
 }

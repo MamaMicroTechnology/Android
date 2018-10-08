@@ -33,9 +33,9 @@ public class OrdersTabAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position){
             case 0:
-                return "Confirmed";
+                return "Delivered";
             case 1:
-                return "Pending";
+                return "Confirmed";
         }
 
         return null;

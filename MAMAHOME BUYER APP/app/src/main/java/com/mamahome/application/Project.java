@@ -5,6 +5,10 @@ import com.google.gson.annotations.SerializedName;
 
 public class Project {
 
+    @SerializedName("project_id")
+    @Expose
+    private String project_id;
+
     @SerializedName("project_name")
     @Expose
     private String project_name;
@@ -68,6 +72,13 @@ public class Project {
     @SerializedName("user_id")
     @Expose
     private String user_id;
+    @SerializedName("length")
+    @Expose
+    private String length;
+    @SerializedName("breadth")
+    @Expose
+    private String breadth;
+
 
     public Project(String project_name, String road_name, String road_width, String address, String construction_type, String interested_in_rmc, String interested_in_loan, String interested_in_doorsandwindows, String municipality_approval, String project_status, String plotsize, String project_type, String project_size, String budgetType, String budget, String basement, String ground, String latitude, String longitude, String image, String user_id) {
         this.project_name = project_name;
@@ -259,5 +270,29 @@ public class Project {
 
     public void setLongitude(String longitude) {
         this.longitude = longitude;
+    }
+
+    public String getLength() {
+        return length;
+    }
+
+    public void setLength(String length) {
+        this.length = length;
+    }
+
+    public String getBreadth() {
+        return breadth;
+    }
+
+    public void setBreadth(String breadth) {
+        this.breadth = breadth;
+    }
+
+    public String getProject_id() {
+        return project_id;
+    }
+
+    public void setProject_id(String project_id) {
+        this.project_id = project_id;
     }
 }

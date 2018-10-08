@@ -1,16 +1,25 @@
 package com.mamahome.application;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import retrofit2.Call;
@@ -21,13 +30,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btn_signup;
+    TextView btn_signup;
     Button btn_login;
     EditText et_username;
     EditText et_password;
     String emailPhone, password;
-    String ROOT_URL = "http://mamahome360.com";
+    String ROOT_URL = "https://mamahome360.com";
     APIKeys APIKeys;
+    ImageView iv_logoMama;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +48,17 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-        et_username = (EditText) findViewById(R.id.et_email);
-        et_password = (EditText) findViewById(R.id.et_password);
 
-        btn_signup = (Button) findViewById(R.id.btn_signup);
+
+        iv_logoMama = findViewById(R.id.iv_logoMama);
+        et_username = findViewById(R.id.et_email);
+        et_password = findViewById(R.id.et_password);
+
+        Drawable myIcon = getResources().getDrawable( R.drawable.mama_vec_logo );
+        iv_logoMama.setImageDrawable(myIcon);
+
+        btn_signup = findViewById(R.id.btn_signup);
+        btn_signup.setText(Html.fromHtml("Don't Have An Account? <b>Click Here</b> To Sign Up"));
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        btn_login = (Button) findViewById(R.id.btn_login);
+        btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,13 +87,16 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl(ROOT_URL)
+                        .baseUrl(ProjectsFragment.ROOT_URL)
                         .addConverterFactory(GsonConverterFactory.create())
+                        .client(selfSigningClientBuilder.createClient(getApplicationContext()))
                         .build();
                 APIKeys = retrofit.create(APIKeys.class);
                 doLogin();
             }
         });
+
+        runTimePermissions();
 
     }
 
@@ -123,6 +143,31 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 100){
+            if(grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED){
+                //btn_login.setEnabled(true);
+            }
+            else{
+                runTimePermissions();
+            }
+        }
+    }
+
+    private boolean runTimePermissions() {
+        if (Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission(this, Manifest.permission
+                .ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this, Manifest
+                .permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission
+                    .ACCESS_COARSE_LOCATION}, 100);
+
+            return true;
+        }
+        return false;
     }
 
 

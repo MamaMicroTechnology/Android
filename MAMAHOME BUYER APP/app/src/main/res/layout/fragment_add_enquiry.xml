@@ -50,6 +50,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <Button
@@ -62,17 +63,12 @@
                 android:layout_marginRight="10dp"/>
             <TextView
                 android:id="@+id/tv_date"
+                android:text="Date Selected : "
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
-        <View
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000"
-            android:layout_marginBottom="5dp"/>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -102,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:hint="Project ID*"
-                android:inputType="text"
+                android:inputType="textCapWords"
                 android:textColor="@color/Black"
                 android:textColorHint="@android:color/black" />
         </android.support.design.widget.TextInputLayout>
@@ -112,12 +108,43 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="15sp"
-            android:text="Product(s)*"
+            android:text="Product*"
             android:textColor="@color/Black"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Product     "
+            android:visibility="gone"
+            android:id="@+id/switchproducts"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:id="@+id/ll_TextProducts">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_category"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_brand"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_sub_category"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_SpinProducts"
             android:orientation="vertical"
             android:layout_margin="10dp">
 
@@ -129,12 +156,20 @@
                 android:text="Select"
                 android:textColor="@color/White"
                 android:layout_marginRight="10dp"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Category"/>
 
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:id="@+id/spin_Category"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Brand"/>
 
             <Spinner
                 android:layout_width="match_parent"
@@ -142,6 +177,10 @@
                 android:layout_margin="10dp"
                 android:id="@+id/spin_Brand"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Product"/>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -150,10 +189,27 @@
 
         </LinearLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabelCommon">
+
+            <EditText
+                android:id="@+id/et_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Quantity*"
+                android:inputType="number"
+                android:textColor="@color/Black"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:theme="@style/TextLabelCommon">
 
             <EditText
@@ -162,7 +218,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:hint="Location*"
-                android:inputType="text"
+                android:inputType="textCapWords"
                 android:textColor="@color/Black"
                 android:textColorHint="@android:color/black" />
         </android.support.design.widget.TextInputLayout>
@@ -178,7 +234,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:hint="Remarks"
-                android:inputType="textMultiLine"
+                android:inputType="textCapWords"
                 android:textColor="@color/Black"
                 android:textColorHint="@android:color/black" />
         </android.support.design.widget.TextInputLayout>
@@ -189,6 +245,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
             android:text="Submit"
             android:textColor="@color/White"
             android:background="@drawable/button_background_green"/>

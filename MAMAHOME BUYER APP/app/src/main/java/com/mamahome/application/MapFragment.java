@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
@@ -12,6 +13,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +30,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import butterknife.ButterKnife;
 
 import static android.content.Context.LOCATION_SERVICE;
+import static android.content.Context.MODE_PRIVATE;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 
@@ -35,6 +38,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     MapView mapView;
     LocationManager locationManager;
     Button bt_map_submit;
+    String Lat, Long;
+    String Latitude, Longitude;
+    SharedPreferences pref;
+    SharedPreferences.Editor editor;
 
     @Nullable
     @Override
@@ -48,6 +55,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         }else{
             showGPSDisabledAlertToUser();
         }
+
+        pref = getActivity().getSharedPreferences("SP_USER_PROJECT_LOCATION", MODE_PRIVATE);
+        Latitude = pref.getString("LATITUDE", null);
+        Longitude = pref.getString("LONGITUDE", null);
+        editor = pref.edit();
+
         mapView = view.findViewById(R.id.map_view_fragment);
         mapView.onCreate(null);
         mapView.onResume();
@@ -56,6 +69,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         bt_map_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                editor.putString("LATITUDE", Lat);
+                editor.putString("LONGITUDE", Long);
+                editor.apply();
                 getActivity().onBackPressed();
             }
         });
@@ -92,10 +108,23 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             if(location!=null){
                 double log= location.getLongitude();
                 double lat = location.getLatitude();
-                LatLng latLng = new LatLng(lat, log);
-                float zoomLevel = 17.0f;
-                mMap.addMarker(new MarkerOptions().position(latLng).title(latLng.latitude + " : " + latLng.longitude));
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoomLevel));
+
+                if (TextUtils.isEmpty(Latitude) && TextUtils.isEmpty(Longitude)){
+                    Lat = String.valueOf(lat);
+                    Long = String.valueOf(log);
+                    LatLng latLng = new LatLng(lat, log);
+                    float zoomLevel = 17.0f;
+                    mMap.addMarker(new MarkerOptions().position(latLng).title(latLng.latitude + " : " + latLng.longitude));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoomLevel));
+                }
+                else{
+                    LatLng ExisitingLatLng = new LatLng(Double.parseDouble(Latitude), Double.parseDouble(Longitude));
+                    float zoomLevel = 17.0f;
+                    mMap.addMarker(new MarkerOptions().position(ExisitingLatLng).title(ExisitingLatLng.latitude + " : " + ExisitingLatLng.longitude));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ExisitingLatLng, zoomLevel));
+                }
+
+
             }
         }
 
@@ -105,8 +134,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 mMap.clear();
                 MarkerOptions marker = new MarkerOptions().position(
                         new LatLng(latLng.latitude, latLng.longitude)).title(latLng.latitude + " : " + latLng.longitude);
-
+                Lat = String.valueOf(latLng.latitude);
+                Long = String.valueOf(latLng.longitude);
                 mMap.addMarker(marker);
+
             }
         });
 

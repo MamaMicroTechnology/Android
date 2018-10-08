@@ -8,67 +8,94 @@
         android:id="@+id/projectsCardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_gravity="center"
-        android:layout_margin="4dp"
-        app:cardElevation="4dp"
+
+        app:cardElevation="8dp"
         app:cardCornerRadius="8dp"
-        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardBackgroundColor="@color/White"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_project_id"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/White"
-                android:textSize="18sp" />
+                android:orientation="horizontal"
+                android:weightSum="8">
 
-            <TextView
-                android:id="@+id/tv_notes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/White"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tv_project_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"/>
 
-            <TextView
-                android:id="@+id/tv_main_category"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/White"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tv_main_category"
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="7"/>
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_edit" />
+
+            </LinearLayout>
+
+
 
             <TextView
                 android:id="@+id/tv_sub_category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/White"
-                android:textSize="18sp" />
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="5dp" />
 
             <TextView
                 android:id="@+id/tv_Brand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/White"
-                android:textSize="18sp" />
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="5dp" />
 
             <TextView
                 android:id="@+id/tv_quantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/White"
-                android:textSize="18sp" />
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/tv_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="5dp" />
 
             <TextView
                 android:id="@+id/tv_enq_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/White"
-                android:textSize="18sp" />
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="5dp" />
 
         </LinearLayout>
 

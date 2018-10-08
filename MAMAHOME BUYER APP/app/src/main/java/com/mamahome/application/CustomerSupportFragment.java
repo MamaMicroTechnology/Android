@@ -46,6 +46,7 @@ public class CustomerSupportFragment extends Fragment {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if(event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK )
                 {
+                    ((HomeActivity)getActivity()).MarkHomeItemSelected(0);
                     getFragmentManager().popBackStack("BS_HOME", 0);
                     return true;
                 }

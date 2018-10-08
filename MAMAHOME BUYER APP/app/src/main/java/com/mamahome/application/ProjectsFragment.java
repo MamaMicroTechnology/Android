@@ -1,12 +1,19 @@
 package com.mamahome.application;
 
 
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -19,6 +26,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,13 +54,15 @@ public class ProjectsFragment extends Fragment implements SearchView.OnQueryText
     FloatingActionButton fabt_addproject;
     TextView tv_addnewproject;
     Animation anim;
+    SwipeRefreshLayout swipeLayout;
     RecyclerView recyclerViewProjects;
     APIKeys APIKeys;
-    String ROOT_URL = "http://mamahome360.com";
+    public static final String ROOT_URL = "https://mamamicrotechnology.com/clients/MH/";
     String User_ID;
     private ArrayList<Project> project;
     private ProjectsAdapter projectsAdapter;
-
+    int[] type = {ConnectivityManager.TYPE_MOBILE, ConnectivityManager.TYPE_WIFI};
+    ProgressDialog progressDialog;
 
 
     public ProjectsFragment() {
@@ -68,11 +79,32 @@ public class ProjectsFragment extends Fragment implements SearchView.OnQueryText
         setRetainInstance(true);
         setHasOptionsMenu(true);
 
+        project = new ArrayList<>();
+
         SharedPreferences prefs = getActivity().getSharedPreferences("SP_USER_DATA", MODE_PRIVATE);
         User_ID = prefs.getString("USER_ID", null);
 
-        getProjects();
-
+        swipeLayout = view.findViewById(R.id.swipeLayout);
+        swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                if(isNetWorkAvailable(type)){
+                    showProgressDialog();
+                    getProjects();
+                }
+                else{
+                    ShowAlert();
+                }
+                //swipeLayout.setRefreshing(false);
+            }
+        });
+        if(isNetWorkAvailable(type)){
+            showProgressDialog();
+            getProjects();
+        }
+        else{
+            ShowAlert();
+        }
         fabt_addproject = (FloatingActionButton) view.findViewById(R.id.fabt_addproject);
         fabt_addproject.setImageDrawable(ContextCompat.getDrawable(view.getContext(), R.drawable.ic_add_white));
         recyclerViewProjects = view.findViewById(R.id.rv_projects);
@@ -98,20 +130,32 @@ public class ProjectsFragment extends Fragment implements SearchView.OnQueryText
 
         ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Projects");
 
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
-        recyclerViewProjects.setLayoutManager(staggeredGridLayoutManager);
-
 
         return view;
     }
 
+    private void showProgressDialog() {
+        progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMessage("Loading...");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
+    }
+
     private void getProjects(){
+
+        if(!swipeLayout.isRefreshing())
+        {
+            swipeLayout.setRefreshing(true);
+        }
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(ROOT_URL)
                 .addConverterFactory(GsonConverterFactory.create())
+                .client(selfSigningClientBuilder.createClient(getContext()))
                 .build();
+
         APIKeys = retrofit.create(APIKeys.class);
         Call<ProjectsList> projectsListCall = APIKeys.viewProject(User_ID);
+
 
         projectsListCall.enqueue(new Callback<ProjectsList>() {
             @Override
@@ -122,6 +166,13 @@ public class ProjectsFragment extends Fragment implements SearchView.OnQueryText
                 project = new ArrayList<>(Arrays.asList(projectsList.getProjects()));
                 projectsAdapter = new ProjectsAdapter(getContext(), project);
                 recyclerViewProjects.setAdapter(projectsAdapter);
+                StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+                LayoutAnimationController controller = AnimationUtils.loadLayoutAnimation(getContext(),R.anim.layout_fall_down);
+                recyclerViewProjects.setLayoutAnimation(controller);
+                recyclerViewProjects.setLayoutManager(staggeredGridLayoutManager);
+                swipeLayout.setRefreshing(false);
+                progressDialog.cancel();
+                //swipeLayout.setRefreshing(false);
                 //recyclerViewProjects.setAdapter(new ProjectsAdapter(getContext(), projectsList.getProjects()));
             }
 
@@ -144,6 +195,7 @@ public class ProjectsFragment extends Fragment implements SearchView.OnQueryText
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if( event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK )
                 {
+                    ((HomeActivity)getActivity()).MarkHomeItemSelected(0);
                     getFragmentManager().popBackStack("BS_HOME", 0);
                     return true;
                 }
@@ -157,6 +209,7 @@ public class ProjectsFragment extends Fragment implements SearchView.OnQueryText
         inflater.inflate(R.menu.menu_search, menu);
         MenuItem menuItem = menu.findItem(R.id.search);
         SearchView searchView = (SearchView) menuItem.getActionView();
+        searchView.setQueryHint("Project Name...");
         searchView.setOnQueryTextListener(this);
         super.onCreateOptionsMenu(menu,inflater);
     }
@@ -172,13 +225,58 @@ public class ProjectsFragment extends Fragment implements SearchView.OnQueryText
         newText = newText.toLowerCase();
         ArrayList<Project> searchedProjects = new ArrayList<>();
         //for (Project project : project){
-        for (int i = 0; i<project.size(); i++){
-            String name = project.get(i).getProject_name().toLowerCase();
-            if (name.contains(newText)){
-                searchedProjects.add(project.get(i));
+        if(!project.isEmpty()) {
+            for (int i = 0; i < project.size(); i++) {
+                String name = project.get(i).getProject_name().toLowerCase();
+                if (name.contains(newText)) {
+                    searchedProjects.add(project.get(i));
+                }
+            }
+            projectsAdapter.setSearchFilter(searchedProjects);
+        }
+        return true;
+    }
+
+    private void ShowAlert(){
+        new AlertDialog.Builder(getContext())
+                .setTitle("Oops.. No Internet Connection")
+                .setMessage("Please Connect To The Internet To Use Our Services! \nThank You.")
+                .setPositiveButton("Try Again", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if(isNetWorkAvailable(type)){
+                            showProgressDialog();
+                            getProjects();
+                        }
+                        else{
+                            ShowAlert();
+                        }
+                    }
+                })
+                .setNegativeButton("Abort", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getContext(), "Aborted", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setCancelable(false)
+                .show();
+    }
+
+    private boolean isNetWorkAvailable(int[] type){
+        try {
+            ConnectivityManager cm = (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+            for(int typeNetwork:type){
+                assert cm != null;
+                NetworkInfo networkInfo = cm.getNetworkInfo(typeNetwork);
+                if(networkInfo != null && networkInfo.getState() == NetworkInfo.State.CONNECTED){
+                    return true;
+                }
             }
         }
-        projectsAdapter.setSearchFilter(searchedProjects);
-        return true;
+        catch (Exception e){
+            return false;
+        }
+        return false;
     }
 }

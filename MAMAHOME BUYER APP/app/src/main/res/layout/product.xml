@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/productsCardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_gravity="center"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:scaleType="fitXY"
+                android:elevation="5dp"
+                android:src="@mipmap/mamahomelogo"
+                android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/iv_tick"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="100dp"
+                    android:visibility="gone"
+                    android:elevation="5dp"
+                    android:src="@drawable/tick"
+                    android:layout_gravity="center"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_productTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/Grey"></View>
+
+                <TextView
+                    android:id="@+id/tv_productTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_margin="2dp"
+                    android:textAllCaps="true"
+                    android:text="TextView"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/oswald"
+                    android:textSize="12sp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

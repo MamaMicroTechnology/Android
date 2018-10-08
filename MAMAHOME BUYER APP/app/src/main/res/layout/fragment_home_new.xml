@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeNewFragment"
+    android:orientation="vertical"
+    android:background="@color/OffWhite">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/home_slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.daimajia.slider.library.SliderLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Category"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/Black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:layout_marginTop="2dp"
+        android:scrollbarSize="6dp"
+        android:background="@color/OffWhite"
+        app:reverseLayout="true"
+        />
+
+            <TextView
+                android:id="@+id/tv_brand"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Brand"
+                android:textColor="@color/Black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_brands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:layout_marginTop="2dp"
+        android:scrollbarSize="6dp"
+        android:background="@color/OffWhite"
+        app:reverseLayout="true"
+        />
+
+            <TextView
+                android:id="@+id/tv_product"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Product"
+                android:textColor="@color/Black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:layout_marginTop="2dp"
+        android:scrollbarSize="6dp"
+        android:background="@color/OffWhite"
+        app:reverseLayout="true"
+        />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

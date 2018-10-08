@@ -39,7 +39,8 @@ public class HomeFragment extends Fragment {
         setHTMLText();
 
         // Inflate the layout for this fragment
-        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Home");
+        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("MamaHome");
+        ((HomeActivity)getActivity()).MarkHomeItemSelected(0);
         return view;
     }
 
@@ -54,6 +55,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        ((HomeActivity)getActivity()).MarkHomeItemSelected(0);
 
         getView().setFocusableInTouchMode(true);
         getView().requestFocus();

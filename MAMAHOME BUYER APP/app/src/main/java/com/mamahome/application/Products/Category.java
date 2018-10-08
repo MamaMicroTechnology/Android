@@ -14,6 +14,9 @@ public class Category {
     @SerializedName("measurement_unit")
     @Expose
     private String measurement_unit;
+    @SerializedName("catimage")
+    @Expose
+    private String catimage;
 
     public String getId() {
         return id;
@@ -37,5 +40,13 @@ public class Category {
 
     public void setMeasurement_unit(String measurement_unit) {
         this.measurement_unit = measurement_unit;
+    }
+
+    public String getCatimage() {
+        return catimage;
+    }
+
+    public void setCatimage(String catimage) {
+        this.catimage = catimage;
     }
 }

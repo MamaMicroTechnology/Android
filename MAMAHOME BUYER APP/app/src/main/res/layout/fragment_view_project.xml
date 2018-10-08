@@ -4,7 +4,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         tools:context=".ViewProjectFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+    android:background="@color/OffWhite">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,23 +20,20 @@
             <ImageView
                 android:id="@+id/header_cover_image"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@color/colorPrimary"
-                android:scaleType="centerCrop" />
+                android:layout_height="140dp"
+                android:background="@color/OffWhite"
+                android:scaleType="centerCrop"/>
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <ImageView
                 android:clickable="true"
-                app:civ_border_width="3dp"
-                app:civ_border_color="#FFFFFF"
                 android:id="@+id/iv_projectImage"
                 android:elevation="10dp"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
                 android:layout_below="@+id/header_cover_image"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="-130dp"
+                android:layout_marginTop="-140dp"
                 android:padding="20dp"
-                android:scaleType="centerCrop"
                 android:src="@mipmap/first_slide" />
 
             <RelativeLayout
@@ -43,13 +41,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/header_cover_image"
-                android:background="#ffffff"
-                android:elevation="4dp"
+                android:background="@color/White"
+                android:layout_marginTop="100dp"
                 android:paddingBottom="10dp">
 
 
                 <ImageView
-                    android:id="@+id/edit"
+                    android:id="@+id/iv_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -76,6 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_projectName"
                     android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
                     android:layout_marginTop="10dp"
                     android:text="Address: "
                     android:textColor="@color/Black"
@@ -90,6 +89,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:text="Status: "
+                    android:textAlignment="center"
                     android:textColor="@color/Black"
                     android:textStyle="bold"
                     android:textSize="18sp" />
@@ -99,15 +99,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profile_layout"
-                android:background="@color/White"
-                android:elevation="4dp">
+                android:background="@color/White">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:elevation="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="20dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tv_moreInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="Show More"
+                        android:textColor="@color/Black"
+                        />
 
             <LinearLayout
+                android:id="@+id/ll_moreInfo"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tv_roadName"
@@ -218,6 +242,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:visibility="gone"
                     android:text="Test"
                     android:textColor="@color/Black"
                     android:textSize="18sp" />
@@ -227,11 +252,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Test"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
                     android:textColor="@color/Black"
                     android:textSize="18sp" />
 
 
             </LinearLayout>
+                </LinearLayout>
         </RelativeLayout>
         </RelativeLayout>
     </ScrollView>

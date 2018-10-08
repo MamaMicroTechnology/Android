@@ -17,6 +17,9 @@ public class SubCategory {
     @SerializedName("sub_cat_name")
     @Expose
     private String sub_cat_name;
+    @SerializedName("subimage")
+    @Expose
+    private String subimage;
 
     public String getId() {
         return id;
@@ -48,5 +51,13 @@ public class SubCategory {
 
     public void setSub_cat_name(String sub_cat_name) {
         this.sub_cat_name = sub_cat_name;
+    }
+
+    public String getSubimage() {
+        return subimage;
+    }
+
+    public void setSubimage(String subimage) {
+        this.subimage = subimage;
     }
 }

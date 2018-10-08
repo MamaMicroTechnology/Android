@@ -2,6 +2,7 @@ package com.mamahome.application;
 
 public class AddEnquiryRequest {
 
+    private String id;
     private String project_id;
     private String A_contact;
     private String quantity;
@@ -91,5 +92,13 @@ public class AddEnquiryRequest {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

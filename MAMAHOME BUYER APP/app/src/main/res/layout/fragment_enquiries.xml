@@ -9,12 +9,51 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="6">
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:background="@color/OffWhite"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/please_select_project_to_view_any_exsisting_enquiry_or_make_a_new_enquiry"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:layout_margin="12dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:background="@color/OffWhite"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_projectsforEnquiry"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:scrollbarSize="5dp"
+                android:clipToPadding="false"
+                app:reverseLayout="true"
+                android:background="@color/OffWhite"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_newEnquiry"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:background="@color/OffWhite"
+            android:visibility="gone"
+            android:layout_weight="1"
             android:gravity="end">
 
             <TextView
@@ -26,40 +65,18 @@
                 android:background="@drawable/text_background_green"
                 android:textStyle="bold"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="28dp"
-                android:visibility="visible"/>
+                android:layout_marginTop="10dp"/>
 
             <android.support.design.widget.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:id="@+id/fabt_addenquiry"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
                 app:fabSize="normal"
                 app:backgroundTint="@color/colorPrimary"/>
 
         </LinearLayout>
-
-        <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/swipeLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-
-
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_enquiries"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                app:reverseLayout="true"
-                />
-
-
-
-        </android.support.v4.widget.SwipeRefreshLayout>
 
     </LinearLayout>
 

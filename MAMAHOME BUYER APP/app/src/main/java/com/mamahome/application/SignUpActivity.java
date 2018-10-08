@@ -1,6 +1,7 @@
 package com.mamahome.application;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -24,9 +26,10 @@ public class SignUpActivity extends AppCompatActivity {
     RadioGroup rg_userType;
     RadioButton radioButton;
     Button btn_signUp;
-    String ROOT_URL = "http://mamahome360.com";
+    String ROOT_URL = "https://mamahome360.com";
     String Name, Email, Phone, Password, UserType;
     APIKeys APIKeys;
+    ImageView iv_logoMama;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +38,15 @@ public class SignUpActivity extends AppCompatActivity {
 
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-        et_Name = (EditText)findViewById(R.id.et_name);
-        et_Email = (EditText) findViewById(R.id.et_email);
-        et_Phone = (EditText) findViewById(R.id.et_phoneNumber);
-        et_Password = (EditText) findViewById(R.id.et_password);
-        rg_userType = (RadioGroup) findViewById(R.id.rg_usertype);
+        iv_logoMama = findViewById(R.id.iv_logoMama);
+        et_Name = findViewById(R.id.et_name);
+        et_Email = findViewById(R.id.et_email);
+        et_Phone = findViewById(R.id.et_phoneNumber);
+        et_Password = findViewById(R.id.et_password);
+        rg_userType = findViewById(R.id.rg_usertype);
+
+        Drawable myIcon = getResources().getDrawable( R.drawable.mama_vec_logo );
+        iv_logoMama.setImageDrawable(myIcon);
 
         btn_signUp = (Button) findViewById(R.id.btn_signup);
         btn_signUp.setOnClickListener(new View.OnClickListener() {
@@ -72,8 +79,9 @@ public class SignUpActivity extends AppCompatActivity {
                 }
 
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl(ROOT_URL)
+                        .baseUrl(ProjectsFragment.ROOT_URL)
                         .addConverterFactory(GsonConverterFactory.create())
+                        .client(selfSigningClientBuilder.createClient(getApplicationContext()))
                         .build();
 
                 APIKeys = retrofit.create(APIKeys.class);

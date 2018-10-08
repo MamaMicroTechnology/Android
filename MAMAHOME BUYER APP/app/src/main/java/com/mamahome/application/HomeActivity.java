@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.drawer_open, R.string.drawer_close);
 
 
-
+        //FragmentManager fragmentManager =
         doFragmentTransactions(Home);
 
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
@@ -54,12 +54,14 @@ public class HomeActivity extends AppCompatActivity {
         tv_name.setText("Hi, "+ userName);
         //tv_name.setText("Hi, "+ userName + "\n" + phoneNumber);
 
+        nv_home.setCheckedItem(R.id.home_id);
+
         nv_home.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.home_id:
-                        HomeFragment homeFragment = (HomeFragment)getSupportFragmentManager().findFragmentByTag("HOME_FRAGMENT");
+                        HomeNewFragment homeFragment = (HomeNewFragment) getSupportFragmentManager().findFragmentByTag("HOME_FRAGMENT");
                         if(homeFragment != null && !homeFragment.isVisible()) {
                             drawerLayout.closeDrawers();
                             item.setChecked(true);
@@ -123,7 +125,7 @@ public class HomeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Drawable toolbar = getResources().getDrawable(R.drawable.toolbar_background);
         getSupportActionBar().setBackgroundDrawable(toolbar);
-        getSupportActionBar().setElevation(5);
+        getSupportActionBar().setElevation(20);
 
 
     }
@@ -148,7 +150,7 @@ public class HomeActivity extends AppCompatActivity {
                 R.anim.slide_out_left, R.anim.slide_in_left,
                 R.anim.slide_out_right);
         if(Fragment.equals(Home)){
-            fragmentTransaction.add(R.id.home_container, new HomeFragment(), "HOME_FRAGMENT");
+            fragmentTransaction.replace(R.id.home_container, new HomeNewFragment(), "HOME_FRAGMENT");
             fragmentTransaction.addToBackStack("BS_HOME");
         }
         else if(Fragment.equals(Projects)){
@@ -172,10 +174,47 @@ public class HomeActivity extends AppCompatActivity {
             fragmentTransaction.addToBackStack("BS_RATEUS");
         }
         else if(Fragment.equals(HomeR)){
-            fragmentTransaction.replace(R.id.home_container, new HomeFragment(), "HOME_FRAGMENT");
+            fragmentTransaction.replace(R.id.home_container, new HomeNewFragment(), "HOME_FRAGMENT");
             fragmentTransaction.addToBackStack(null);
         }
         fragmentTransaction.commit();
     }
 
+    public void MarkHomeItemSelected(int id){
+        nv_home.getMenu().getItem(id).setChecked(true);
+        /*nv_home.post(new Runnable() {
+            @Override
+            public void run() {
+                nv_home.setCheckedItem(R.id.home_id);
+            }
+        });*/
+
+    }
+
+    /*@Override
+    public void onBackPressed() {
+        HomeNewFragment homeFragment = (HomeNewFragment)getSupportFragmentManager().findFragmentByTag("HOME_FRAGMENT");
+        if(homeFragment == null && homeFragment.isVisible()){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(R.string.app_name);
+            builder.setIcon(R.mipmap.ic_launcher);
+            builder.setMessage("Do You Want To Exit?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            finish();
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
+        else{
+            super.onBackPressed();
+        }
+    }*/
 }

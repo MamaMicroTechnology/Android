@@ -16,242 +16,110 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edcb0962-2f0d-4d00-9ed1-7609af6f47ac" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/ResObj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/remote/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/utils/Location_ForeGround_Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/utils/SendingNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/view/LoginActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/view/SplashActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/mmt.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/motorbike.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/map_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Android.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MH LE TRACKING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/Banner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/BannerList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/BaseSliderView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/ConfirmedOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/ConfirmedOrdersAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/CustomEnquiryFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/ExistingEnquiriesFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/HomeNewFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/MyGlideModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/OkHttpStreamFetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/OkHttpUrlLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/PendingOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/PendingOrdersAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/Products/BrandAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/Products/CategoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/Products/SubCategoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/ProjectsInEnquiriesAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/SelectProjectFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/SelectingProjectAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/UnsafeOkHttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/UpdateEnquiryFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/UpdateProjectFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/_sliders/FragmentSlider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/_sliders/NewHomeFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/_sliders/SliderIndicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/_sliders/SliderPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/_sliders/SliderView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/model/selfSigningClientBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fadein.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fall_down.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fill_screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/from_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/layout_fall_down.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/layout_from_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/layout_hide.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/layout_show.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/left_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/left_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/right_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/right_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/color/drawer_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_gradient.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_indicator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/cement.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/color.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drawer_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/edu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/fading_background_bottom_top.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_cancel_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/indicator_circle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mama_vec_logo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/alexbrush.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/badmofo.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/ostrich.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/oswald.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/porter.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/custompopup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_custom_enquiry.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_new_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_select_project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_slider_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_existing_enquiries.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/order.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/product.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/projects_in_enquiries.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/first_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/fourth_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/mamahomelogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/mamahomelogofinal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/second_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/third_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/first_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/fourth_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/mamahomelogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/mamahomelogofinal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/second_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/third_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/first_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/fourth_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/mamahomelogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/mamahomelogofinal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/second_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/third_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/first_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/fourth_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/mamahomelogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/mamahomelogofinal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/second_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/third_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/first_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/fourth_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/mamahomelogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/mamahomelogofinal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/mamalogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/second_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/third_slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/assetWizardSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/caches/build_file_checksums.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/androidTest/java/com/mamahome/application/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/APIKeys.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddEnquiryFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddEnquiryRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddEnquiryResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddProjectFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddProjectRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/AddProjectResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ConfirmedOrdersFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/CustomerSupportFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/EnquiriesAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/EnquiriesFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/EnquiriesList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/Enquiry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/HomeActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/HomeFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/LoginActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/LoginResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/MapFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/OrdersFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/OrdersTabAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/PendingOrdersFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/PrefManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/Products/Brand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/Products/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/Products/ProductList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/Products/SubCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ProjectsAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ProjectsFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ProjectsList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/RateUsFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/SignUpActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/SignUpRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/SignUpResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/SplashScreenActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ViewEnquiryFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ViewOrderFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/ViewProjectFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/java/com/mamahome/application/WelcomeActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/fadeout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/growbig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/slide_in_left.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/slide_in_right.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/slide_out_left.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/slide_out_right.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/tobottom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/anim/totop.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable-mdpi/text_background_green.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/builder.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/bulidings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/button_background_green.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/button_background_lightgreen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/call_vector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/customer_support_vector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_add_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_add_white.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_customer_support_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_enquiry_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_home_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_logout_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_orders_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_projects_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_rate_us_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_search_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_shopping_cart_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_visibility_off_white_18dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/ic_visibility_white_18dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/icon_selector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/mail_vector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/side_nav_bar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/tab_selected_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/tab_selector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/text_background_orange.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/text_background_red.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/toolbar_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/drawable/whatsapp_vector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_splash_screen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/activity_welcome.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/enquiry.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/field_project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_add_enquiry.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_add_project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_confirmed_orders.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_customer_support.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_enquiries.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_map.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_orders.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_pending_orders.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_projects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_rate_us.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_view_enquiry.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_view_order.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/fragment_view_project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/nav_header.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/welcome_slide_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/welcome_slide_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/welcome_slide_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/layout/welcome_slide_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/menu/home_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/menu/menu_search.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values-v21/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/drawables.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/app/src/test/java/com/mamahome/application/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAMAHOME BUYER APP/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/.idea/caches/build_file_checksums.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/androidTest/java/com/example/reube/menu/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/login_activity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/model/ResObj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/remote/ApiUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/remote/LocationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/remote/RetrofitClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/java/com/example/reube/menu/remote/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_camera.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_gallery.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_manage.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_send.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_share.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/ic_keyboard_capslock_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/ic_lock_outline_black.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/mamahome_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/mamahome_icon_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/mmt.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/drawable/side_nav_bar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/content_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/layout/nav_header_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/menu/main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values-v21/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/drawables.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/google_maps_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/app/src/test/java/com/example/reube/menu/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMT TRACKING APP/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -289,8 +157,8 @@
       <file leaf-file-name="MapActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/view/MapActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="441" column="44" lean-forward="true" selection-start-line="441" selection-start-column="44" selection-end-line="441" selection-end-column="44" />
+            <state relative-caret-position="370">
+              <caret line="434" column="26" lean-forward="true" selection-start-line="434" selection-start-column="26" selection-end-line="434" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2926,7 +2794,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
@@ -3533,8 +3401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mamahome360/mamahomele/view/MapActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="441" column="44" lean-forward="true" selection-start-line="441" selection-start-column="44" selection-end-line="441" selection-end-column="44" />
+        <state relative-caret-position="370">
+          <caret line="434" column="26" lean-forward="true" selection-start-line="434" selection-start-column="26" selection-end-line="434" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
